@@ -88,10 +88,10 @@
         <item name="· Javadoc" href="apidocs/op4j-ognl/index.html"/>
       </item>
       <item name="· op4j-jodatime" collapse="true" href="jodatime-about.html">
-        <item name="· Functions" collapse="true">
-          <item name="· FnDateTime" href="jodatime-datetime.html" collapse="true"/>
+        <item name="· Functions">
+          <item name="· FnDateTime" href="jodatime-datetime.html"/>
         </item>
-        <item name="· Javadoc" href="apidocs/op4j-jodatime/index.html" collapse="true"/>
+        <item name="· Javadoc" href="apidocs/op4j-jodatime/index.html"/>
       </item>
     </menu>
 
