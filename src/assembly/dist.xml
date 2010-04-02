@@ -9,19 +9,51 @@
   
   <fileSets>
     <fileSet>
-      <directory>${basedir}/target/apidocs/</directory>
-      <outputDirectory>/apidocs</outputDirectory>
+      <directory>${basedir}/../op4j/target/apidocs/</directory>
+      <outputDirectory>/apidocs/op4j</outputDirectory>
       <includes>
         <include>**/*</include>
       </includes>
     </fileSet>
     <fileSet>
-      <directory>${basedir}/target/</directory>
+      <directory>${basedir}/../op4j-ognl/target/apidocs/</directory>
+      <outputDirectory>/apidocs/op4j-ognl</outputDirectory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>${basedir}/../op4j-jodatime/target/apidocs/</directory>
+      <outputDirectory>/apidocs/op4j-jodatime</outputDirectory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>${basedir}/../op4j/target/</directory>
       <outputDirectory>/dist</outputDirectory>
       <includes>
-        <include>${artifactId}-${version}.jar</include>
-        <include>${artifactId}-${version}-javadoc.jar</include>
-        <include>${artifactId}-${version}-sources.jar</include>
+        <include>op4j-${version}.jar</include>
+        <include>op4j-${version}-javadoc.jar</include>
+        <include>op4j-${version}-sources.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>${basedir}/../op4j-ognl/target/</directory>
+      <outputDirectory>/dist</outputDirectory>
+      <includes>
+        <include>op4j-ognl-${version}.jar</include>
+        <include>op4j-ognl-${version}-javadoc.jar</include>
+        <include>op4j-ognl-${version}-sources.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>${basedir}/../op4j-jodatime/target/</directory>
+      <outputDirectory>/dist</outputDirectory>
+      <includes>
+        <include>op4j-jodatime-${version}.jar</include>
+        <include>op4j-jodatime-${version}-javadoc.jar</include>
+        <include>op4j-jodatime-${version}-sources.jar</include>
       </includes>
     </fileSet>
     <fileSet>
