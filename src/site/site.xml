@@ -89,6 +89,7 @@
       </item>
       <item name="· op4j-jodatime" collapse="true" href="jodatime-about.html">
         <item name="· Functions">
+          <item name="· FnJodaTimeUtils" href="jodatime-fnjodatimeutils.html"/>
           <item name="· FnDateTime" href="jodatime-datetime.html"/>
         </item>
         <item name="· Javadoc" href="apidocs/op4j-jodatime/index.html"/>
