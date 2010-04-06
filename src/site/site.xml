@@ -89,8 +89,13 @@
       </item>
       <item name="· op4j-jodatime" collapse="true" href="jodatime-about.html">
         <item name="· Functions">
-          <item name="· FnJodaTimeUtils" href="jodatime-fnjodatimeutils.html"/>
-          <item name="· FnDateTime" href="jodatime-datetime.html"/>
+          <item name="· FnJodaToString" href="jodatime-fnjodatostring.html"/>
+          <item name="· FnToDateMidnight" href="jodatime-fntodatemidnight.html"/>
+          <item name="· FnToDateTime" href="jodatime-fntodatetime.html"/>
+          <item name="· FnToInterval" href="jodatime-fntointerval.html"/>
+          <item name="· FnToLocalDate" href="jodatime-fntolocaldate.html"/>
+          <item name="· FnToLocalTime" href="jodatime-fntolocaltime.html"/>
+          <item name="· FnToPeriod" href="jodatime-fntoperiod.html"/>
         </item>
         <item name="· Javadoc" href="apidocs/op4j-jodatime/index.html"/>
       </item>
