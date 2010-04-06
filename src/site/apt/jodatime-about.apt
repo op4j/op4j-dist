@@ -3,3 +3,82 @@
   -------
 
 JodaTime Extension
+
+  {{{http://joda-time.sourceforge.net/}Joda-Time}}, as said in its website,
+  <"provides a quality replacement for the Java date and time classes">. It contains lots 
+  of classes to work with dates, times, timezones and an integration with Hibernate among other functionalities.
+  
+  <<op4j-jodatime>> is an extension that gives you access to a bunch of functions related
+  to jodatime classes in an op4j way. The functions in this extension include:
+  
+    * Conversions from BaseDateTime to String
+  
+    * Conversions from Calendar to DateTime
+
+    * Conversions from Date to DateMidnight
+
+    * Creation of Period from Calendar objects
+    
+    * Creation of Interval from String objects
+    
+    * ... and many more
+    
+
+
+* Function classes
+
+  The extension comprises the following <function hub class>:
+  
+     
+    * {{{./jodatime-fnjodatostring.html}FnJodaToString}}:  
+
+    * {{{./jodatime-fntodatemidnight.html}FnToDateMidnight}}: 
+    
+    * {{{./jodatime-fntodatetime.html}FnToDateTime}}: 
+    
+    * {{{./jodatime-fntointerval.html}FnToInterval}}: 
+    
+    * {{{./jodatime-fntolocaldate}FnToLocalDate}}: 
+    
+    * {{{./jodatime-fntolocaltime}FnToLocalTime}}: 
+    
+    * {{{./jodatime-fntoperiod}FnToPeriod}}: 
+
+    * FnJodaTimeUtils: is a shortcut to all of the methods included
+    in the classes above. This way, 
+    
+    []
+    
++--
+List<DateTime> targets = new ArrayList<DateTime>();
+targets.add(new DateTime());
+List<String> result1 = Op.onList(targets).forEach().exec(FnJodaToString.fromBaseDateTime(FormatType.PATTERN, 
+  "yyyy-MM-DD_HH:mm:ss:SS")).get();
+  
+String pattern = "dd/mm/yyyy-HH:mm";
+String asStr = "24/12/2000-15:03";
+DateMidnight result2 = Op.on(asStr).exec(FnToDateMidnight.fromString(pattern)).get();
++--
+
+  is equivalent to
+
++--
+List<DateTime> targets = new ArrayList<DateTime>();
+targets.add(new DateTime());
+List<String> result1 = Op.onList(targets).forEach().exec(FnJodaTimeUtils.baseDateTimeToStr(FormatType.PATTERN, 
+  "yyyy-MM-DD_HH:mm:ss:SS")).get();
+  
+String pattern = "dd/mm/yyyy-HH:mm";
+String asStr = "24/12/2000-15:03";
+DateMidnight result2 = Op.on(asStr).exec(FnJodaTimeUtils.strToDateMidnight(pattern)).get();
++-- 
+    
+
+* Use
+
+  This section includes some examples of the use of the classes listed above.
+  
++--
+  Op.on......
++--
+  
