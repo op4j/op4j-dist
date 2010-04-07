@@ -136,6 +136,13 @@
       <version>${version}</version>
       <scope>compile</scope>
     </dependency>
+  
+    <dependency>
+      <groupId>org.op4j</groupId>
+      <artifactId>op4j-jodatime</artifactId>
+      <version>${version}</version>
+      <scope>compile</scope>
+    </dependency>
     
   </dependencies>
 
