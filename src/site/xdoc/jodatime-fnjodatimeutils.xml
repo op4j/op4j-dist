@@ -27,7 +27,7 @@
           
         </p>
         
-      
+
 
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
@@ -41,7 +41,7 @@
 <tr class="a"><td><b>baseDateTimeFieldArrayToPeriod</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
 <tr class="b"><td><b>baseDateTimeFieldArrayToPeriod</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>baseDateTimeFieldCollectionToInterval</b></td><td>BaseDateTimeFieldCollectionToInterval</td><td></td><td></td></tr>
+<tr class="a"><td><b>baseDateTimeFieldCollectionToInterval</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Interval&gt;</td><td></td><td></td></tr>
 <tr class="b"><td><b>baseDateTimeFieldCollectionToInterval</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Interval&gt;</td><td>DateTimeZone dateTimeZone</td><td></td></tr>
 <tr class="a"><td><b>baseDateTimeFieldCollectionToInterval</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Interval&gt;</td><td>Chronology chronology</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -99,7 +99,7 @@
 <tr class="b"><td><b>dateFieldArrayToPeriod</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
 <tr class="a"><td><b>dateFieldArrayToPeriod</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>dateFieldCollectionToInterval</b></td><td>DateFieldCollectionToInterval</td><td></td><td>It creates an  Interval from the given  Date elements</td></tr>
+<tr class="b"><td><b>dateFieldCollectionToInterval</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Interval&gt;</td><td></td><td>It creates an  Interval from the given  Date elements</td></tr>
 <tr class="a"><td><b>dateFieldCollectionToInterval</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Interval&gt;</td><td>DateTimeZone dateTimeZone</td><td>It creates an  Interval from the given  Date  elements. The  Interval will be created with the given  DateTimeZone</td></tr>
 <tr class="b"><td><b>dateFieldCollectionToInterval</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Interval&gt;</td><td>Chronology chronology</td><td>It creates an  Interval from the given  Date elements. The  Interval will be created with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -344,10 +344,8 @@
 <tr class="b"><td><b>timestampToLocalTime</b></td><td>Function&lt;Timestamp, LocalTime&gt;</td><td>Chronology chronology</td><td>The given  Timestamp is converted into a  LocalTime with the given  Chronology</td></tr>
 </tbody></table>
 
-
 </subsection>
       
     </section>
   </body>
 </document>
-

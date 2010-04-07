@@ -25,40 +25,43 @@
 
       <subsection name="2. Functions">
 
-        
+  
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
-<tr class="b"><td><b>fromCalendar</b></td><td>CalendarToDateMidnight&lt;T&gt;</td><td>DateTimeZone dateTimeZone</td><td>It converts a  Calendar into a  DateMidnight in the given  DateTimeZone</td></tr>
-<tr class="a"><td><b>fromCalendar</b></td><td>CalendarToDateMidnight&lt;T&gt;</td><td>Chronology chronology</td><td>It converts a  Calendar into a  DateMidnight with the given  Chronology</td></tr>
+<tr class="b"><td><b>fromCalendar</b></td><td>Function&lt;T, DateMidnight&gt;</td><td>DateTimeZone dateTimeZone</td><td>It converts a  Calendar into a  DateMidnight in the given  DateTimeZone</td></tr>
+<tr class="a"><td><b>fromCalendar</b></td><td>Function&lt;T, DateMidnight&gt;</td><td>Chronology chronology</td><td>It converts a  Calendar into a  DateMidnight with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromDate</b></td><td>DateToDateMidnight&lt;T&gt;</td><td>DateTimeZone dateTimeZone</td><td>The given  Date is converted into a  DateMidnight configured with the given  DateTimeZone</td></tr>
-<tr class="a"><td><b>fromDate</b></td><td>DateToDateMidnight&lt;T&gt;</td><td>Chronology chronology</td><td>The given  Date is converted into a  DateMidnight with the given  Chronology</td></tr>
+<tr class="b"><td><b>fromDate</b></td><td>Function&lt;T, DateMidnight&gt;</td><td>DateTimeZone dateTimeZone</td><td>The given  Date is converted into a  DateMidnight configured with the given  DateTimeZone</td></tr>
+<tr class="a"><td><b>fromDate</b></td><td>Function&lt;T, DateMidnight&gt;</td><td>Chronology chronology</td><td>The given  Date is converted into a  DateMidnight with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromIntegerFieldArray</b></td><td>IntegerFieldArrayToDateMidnight</td><td>Chronology chronology</td><td>A  DateMidnight is created from the given  Integer array. Year, month, day can be used. If not all of them set, the last ones will be set to 1 The result will be created with the given  Chronology</td></tr>
+<tr class="b"><td><b>fromIntegerFieldArray</b></td><td>Function&lt;Integer[], DateMidnight&gt;</td><td>Chronology chronology</td><td>A  DateMidnight is created from the given  Integer array. Year, month, day can be used. If not all of them set, the last ones will be set to 1 The result will be created with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromIntegerFieldCollection</b></td><td>IntegerFieldCollectionToDateMidnight</td><td>Chronology chronology</td><td>A  DateMidnight is created from the given  Integer  Collection. Year, month, day can be used. If not all of them set, the last ones will be set to 1 The result will be created with the given  Chronology</td></tr>
+<tr class="a"><td><b>fromIntegerFieldCollection</b></td><td>Function&lt;Collection&lt;Integer&gt;, DateMidnight&gt;</td><td>Chronology chronology</td><td>A  DateMidnight is created from the given  Integer  Collection. Year, month, day can be used. If not all of them set, the last ones will be set to 1 The result will be created with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromLong</b></td><td>LongToDateMidnight</td><td>DateTimeZone dateTimeZone</td><td>The given long representing the time in milliseconds is converted into a  DateMidnight in the given  DateTimeZone</td></tr>
-<tr class="a"><td><b>fromLong</b></td><td>LongToDateMidnight</td><td>Chronology chronology</td><td>The given long representing the time in milliseconds is converted into a  DateMidnight with the given  Chronology</td></tr>
+<tr class="b"><td><b>fromLong</b></td><td>Function&lt;Long, DateMidnight&gt;</td><td>DateTimeZone dateTimeZone</td><td>The given long representing the time in milliseconds is converted into a  DateMidnight in the given  DateTimeZone</td></tr>
+<tr class="a"><td><b>fromLong</b></td><td>Function&lt;Long, DateMidnight&gt;</td><td>Chronology chronology</td><td>The given long representing the time in milliseconds is converted into a  DateMidnight with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern</td><td>It converts the given  String into a  DateMidnight using the given pattern parameter. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead</td></tr>
-<tr class="a"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern<br />DateTimeZone dateTimeZone</td><td>It converts the given  String into a  DateMidnight using the given pattern parameter and with the given  DateTimeZone. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead</td></tr>
-<tr class="b"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern<br />Chronology chronology</td><td>It converts the given  String into a  DateMidnight using the given pattern parameter and with the given  Chronology. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead</td></tr>
-<tr class="a"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern<br />Locale locale</td><td>It converts the given  String into a  DateMidnight using the given pattern and  Locale parameters</td></tr>
-<tr class="b"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern<br />String locale</td><td>It converts the given  String into a  DateMidnight using the given pattern and  Locale parameters</td></tr>
-<tr class="a"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern<br />Locale locale<br />DateTimeZone dateTimeZone</td><td>It converts the given String into a  DateMidnight using the given pattern and  Locale parameters. The  DateMidnight is configured with the given  DateTimeZone</td></tr>
-<tr class="b"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern<br />String locale<br />DateTimeZone dateTimeZone</td><td>It converts the given  String into a  DateMidnight using the given pattern and  Locale parameters. The  DateMidnight is configured with the given  DateTimeZone</td></tr>
-<tr class="a"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern<br />Locale locale<br />Chronology chronology</td><td>It converts the given  String into a  DateMidnight using the given pattern and  Locale parameters. The  DateMidnight will be created with the given  Chronology</td></tr>
-<tr class="b"><td><b>fromString</b></td><td>StringToDateMidnight</td><td>String pattern<br />String locale<br />Chronology chronology</td><td>It converts the given String into a  DateMidnight using the given pattern and  Locale parameters. The  DateMidnight will be created with the given  Chronology</td></tr>
+<tr class="b"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern</td><td>It converts the given  String into a  DateMidnight using the given pattern parameter. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead</td></tr>
+<tr class="a"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern<br />DateTimeZone dateTimeZone</td><td>It converts the given  String into a  DateMidnight using the given pattern parameter and with the given  DateTimeZone. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead</td></tr>
+<tr class="b"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern<br />Chronology chronology</td><td>It converts the given  String into a  DateMidnight using the given pattern parameter and with the given  Chronology. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead</td></tr>
+<tr class="a"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern<br />Locale locale</td><td>It converts the given  String into a  DateMidnight using the given pattern and  Locale parameters</td></tr>
+<tr class="b"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern<br />String locale</td><td>It converts the given  String into a  DateMidnight using the given pattern and  Locale parameters</td></tr>
+<tr class="a"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern<br />Locale locale<br />DateTimeZone dateTimeZone</td><td>It converts the given String into a  DateMidnight using the given pattern and  Locale parameters. The  DateMidnight is configured with the given  DateTimeZone</td></tr>
+<tr class="b"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern<br />String locale<br />DateTimeZone dateTimeZone</td><td>It converts the given  String into a  DateMidnight using the given pattern and  Locale parameters. The  DateMidnight is configured with the given  DateTimeZone</td></tr>
+<tr class="a"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern<br />Locale locale<br />Chronology chronology</td><td>It converts the given  String into a  DateMidnight using the given pattern and  Locale parameters. The  DateMidnight will be created with the given  Chronology</td></tr>
+<tr class="b"><td><b>fromString</b></td><td>Function&lt;String, DateMidnight&gt;</td><td>String pattern<br />String locale<br />Chronology chronology</td><td>It converts the given String into a  DateMidnight using the given pattern and  Locale parameters. The  DateMidnight will be created with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromStringFieldArray</b></td><td>StringFieldArrayToDateMidnight</td><td>Chronology chronology</td><td>A  DateMidnight is created from the given  String array. Year, month, day can be used. If not all of them set, the last ones will be set to 1 The result will be created with the given  Chronology</td></tr>
+<tr class="a"><td><b>fromStringFieldArray</b></td><td>Function&lt;String[], DateMidnight&gt;</td><td>Chronology chronology</td><td>A  DateMidnight is created from the given  String array. Year, month, day can be used. If not all of them set, the last ones will be set to 1 The result will be created with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromStringFieldCollection</b></td><td>StringFieldCollectionToDateMidnight</td><td>Chronology chronology</td><td>A  DateMidnight is created from the given  String  Collection. Year, month, day can be used. If not all of them set, the last ones will be set to 1 The result will be created with the given  Chronology</td></tr>
+<tr class="b"><td><b>fromStringFieldCollection</b></td><td>Function&lt;Collection&lt;String&gt;, DateMidnight&gt;</td><td>Chronology chronology</td><td>A  DateMidnight is created from the given  String  Collection. Year, month, day can be used. If not all of them set, the last ones will be set to 1 The result will be created with the given  Chronology</td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromTimestamp</b></td><td>TimestampToDateMidnight</td><td>DateTimeZone dateTimeZone</td><td>The given  Timestamp is converted into a  DateMidnight in the given  DateTimeZone</td></tr>
-<tr class="b"><td><b>fromTimestamp</b></td><td>TimestampToDateMidnight</td><td>Chronology chronology</td><td>The given  Timestamp is converted into a  DateMidnight with the given  Chronology</td></tr>
+<tr class="a"><td><b>fromTimestamp</b></td><td>Function&lt;Timestamp, DateMidnight&gt;</td><td>DateTimeZone dateTimeZone</td><td>The given  Timestamp is converted into a  DateMidnight in the given  DateTimeZone</td></tr>
+<tr class="b"><td><b>fromTimestamp</b></td><td>Function&lt;Timestamp, DateMidnight&gt;</td><td>Chronology chronology</td><td>The given  Timestamp is converted into a  DateMidnight with the given  Chronology</td></tr>
 </tbody></table>
+
+
 
 </subsection>
       
