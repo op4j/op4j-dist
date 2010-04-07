@@ -16,20 +16,39 @@
       <subsection name="1. Overview">
 
         <p>
-          
+            <b><a href="http://www.op4j.org/apidocs/op4j-jodatime/org/op4j/jodatime/functions/FnJodaToString.html">FnJodaToString</a></b> is a <em>function hub class</em>
+            containing a lot of static methods to convert jodatime objects to String. Those static methods return functions whose 
+            input is <b>BaseDateTime, LocalDate or LocalTime</b> and whose output is String. It includes conversions to String
+            from BaseDateTime, LocalDate and LocalTime            
         </p>
         
       </subsection>
 
       <subsection name="2. Functions">
 
-        <p>
-          
-        </p>
         
-      </subsection>
+<table border="0">
+<thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
+<tbody>
+<tr class="b"><td><b>fromBaseDateTime</b></td><td>BaseDateTimeToStr</td><td>DateTimeFormatter formatter</td><td>It converts the given  BaseDateTime into a  String by means of the given  DateTimeFormatter</td></tr>
+<tr class="a"><td><b>fromBaseDateTime</b></td><td>BaseDateTimeToStr</td><td>FormatType formatType<br />String format</td><td>It converts the given  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+<tr class="b"><td><b>fromBaseDateTime</b></td><td>BaseDateTimeToStr</td><td>FormatType formatType<br />String format<br />Locale locale</td><td>It converts the given  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+<tr class="a"><td><b>fromBaseDateTime</b></td><td>BaseDateTimeToStr</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td>It converts the given  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+<tr class="b"><td><b>fromBaseDateTime</b></td><td>BaseDateTimeToStr</td><td>FormatType formatType<br />String format<br />String locale</td><td>It converts the given  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>fromLocalDate</b></td><td>LocalDateToStr</td><td>DateTimeFormatter formatter</td><td>It converts the given  LocalDate into a  String by means of the given  DateTimeFormatter</td></tr>
+<tr class="b"><td><b>fromLocalDate</b></td><td>LocalDateToStr</td><td>FormatType formatType<br />String format<br />Locale locale</td><td>It converts the given  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Locale</td></tr>
+<tr class="a"><td><b>fromLocalDate</b></td><td>LocalDateToStr</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td>It converts the given  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Chronology</td></tr>
+<tr class="b"><td><b>fromLocalDate</b></td><td>LocalDateToStr</td><td>FormatType formatType<br />String format<br />String locale</td><td>It converts the given  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Locale</td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>fromLocalTime</b></td><td>LocalTimeToStr</td><td>DateTimeFormatter formatter</td><td>It converts the given  LocalTime into a  String by means of the given  DateTimeFormatter</td></tr>
+<tr class="b"><td><b>fromLocalTime</b></td><td>LocalTimeToStr</td><td>FormatType formatType<br />String format<br />Locale locale</td><td>It converts the given  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+<tr class="a"><td><b>fromLocalTime</b></td><td>LocalTimeToStr</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td>It converts the given  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+<tr class="b"><td><b>fromLocalTime</b></td><td>LocalTimeToStr</td><td>FormatType formatType<br />String format<br />String locale</td><td>It converts the given  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+</tbody></table>
+
+</subsection>
       
     </section>
   </body>
 </document>
-

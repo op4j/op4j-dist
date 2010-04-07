@@ -16,20 +16,85 @@
       <subsection name="1. Overview">
 
         <p>
-          
+            <b><a href="http://www.op4j.org/apidocs/op4j-jodatime/org/op4j/jodatime/functions/FnToPeriod.html">FnToPeriod</a></b> is a <em>function hub class</em>
+            containing a lot of static methods to convert from various input objects to Period. Those static methods return functions whose 
+            output is Period and whose input can be Calendar list, BaseDateTime list, Calendar list and Long list among others.             
         </p>
         
       </subsection>
 
       <subsection name="2. Functions">
 
-        <p>
-          
-        </p>
         
+<table border="0">
+<thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
+<tbody>
+<tr class="b"><td><b>fromBaseDateTimeFieldArray</b></td><td>BaseDateTimeFieldArrayToPeriod&lt;T&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>fromBaseDateTimeFieldArray</b></td><td>BaseDateTimeFieldArrayToPeriod&lt;T&gt;</td><td>Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromBaseDateTimeFieldArray</b></td><td>BaseDateTimeFieldArrayToPeriod&lt;T&gt;</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="a"><td><b>fromBaseDateTimeFieldArray</b></td><td>BaseDateTimeFieldArrayToPeriod&lt;T&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromBaseDateTimeFieldCollection</b></td><td>BaseDateTimeFieldCollectionToPeriod</td><td>Chronology chronology</td><td></td></tr>
+<tr class="a"><td><b>fromBaseDateTimeFieldCollection</b></td><td>BaseDateTimeFieldCollectionToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="b"><td><b>fromBaseDateTimeFieldCollection</b></td><td>BaseDateTimeFieldCollectionToPeriod</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>fromCalendarFieldArray</b></td><td>CalendarFieldArrayToPeriod&lt;T&gt;</td><td></td><td></td></tr>
+<tr class="b"><td><b>fromCalendarFieldArray</b></td><td>CalendarFieldArrayToPeriod&lt;T&gt;</td><td>Chronology chronology</td><td></td></tr>
+<tr class="a"><td><b>fromCalendarFieldArray</b></td><td>CalendarFieldArrayToPeriod&lt;T&gt;</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="b"><td><b>fromCalendarFieldArray</b></td><td>CalendarFieldArrayToPeriod&lt;T&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>fromCalendarFieldCollection</b></td><td>CalendarFieldCollectionToPeriod</td><td>Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromCalendarFieldCollection</b></td><td>CalendarFieldCollectionToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="a"><td><b>fromCalendarFieldCollection</b></td><td>CalendarFieldCollectionToPeriod</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromDateFieldArray</b></td><td>DateFieldArrayToPeriod&lt;T&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>fromDateFieldArray</b></td><td>DateFieldArrayToPeriod&lt;T&gt;</td><td>Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromDateFieldArray</b></td><td>DateFieldArrayToPeriod&lt;T&gt;</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="a"><td><b>fromDateFieldArray</b></td><td>DateFieldArrayToPeriod&lt;T&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromDateFieldCollection</b></td><td>DateFieldCollectionToPeriod</td><td></td><td></td></tr>
+<tr class="a"><td><b>fromDateFieldCollection</b></td><td>DateFieldCollectionToPeriod</td><td>Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromDateFieldCollection</b></td><td>DateFieldCollectionToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="a"><td><b>fromDateFieldCollection</b></td><td>DateFieldCollectionToPeriod</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromIntegerFieldArray</b></td><td>IntegerFieldArrayToPeriod</td><td></td><td></td></tr>
+<tr class="a"><td><b>fromIntegerFieldArray</b></td><td>IntegerFieldArrayToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromIntegerFieldCollection</b></td><td>IntegerFieldCollectionToPeriod</td><td></td><td>A Period is created either: <ul>	   <li>From a set of  Integer representing the hours, minutes, seconds and milliseconds</li> <li>From a set of  Integer representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
+<tr class="a"><td><b>fromIntegerFieldCollection</b></td><td>IntegerFieldCollectionToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromLong</b></td><td>LongToPeriod</td><td>Chronology chronology</td><td></td></tr>
+<tr class="a"><td><b>fromLong</b></td><td>LongToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="b"><td><b>fromLong</b></td><td>LongToPeriod</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>fromLongFieldArray</b></td><td>LongFieldArrayToPeriod</td><td></td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr class="b"><td><b>fromLongFieldArray</b></td><td>LongFieldArrayToPeriod</td><td>Chronology chronology</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr class="a"><td><b>fromLongFieldArray</b></td><td>LongFieldArrayToPeriod</td><td>PeriodType periodType</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr class="b"><td><b>fromLongFieldArray</b></td><td>LongFieldArrayToPeriod</td><td>PeriodType periodType<br />Chronology chronology</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>fromLongFieldCollection</b></td><td>LongFieldCollectionToPeriod</td><td>Chronology chronology</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr class="b"><td><b>fromLongFieldCollection</b></td><td>LongFieldCollectionToPeriod</td><td>PeriodType periodType</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr class="a"><td><b>fromLongFieldCollection</b></td><td>LongFieldCollectionToPeriod</td><td>PeriodType periodType<br />Chronology chronology</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromStringFieldArray</b></td><td>StringFieldArrayToPeriod</td><td></td><td></td></tr>
+<tr class="a"><td><b>fromStringFieldArray</b></td><td>StringFieldArrayToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromStringFieldCollection</b></td><td>StringFieldCollectionToPeriod</td><td></td><td>A Period is created either: <ul>	   <li>From a set of  String representing the hours, minutes, seconds and milliseconds</li> <li>From a set of  String representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
+<tr class="a"><td><b>fromStringFieldCollection</b></td><td>StringFieldCollectionToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromTimestampFieldArray</b></td><td>TimestampFieldArrayToPeriod</td><td></td><td></td></tr>
+<tr class="a"><td><b>fromTimestampFieldArray</b></td><td>TimestampFieldArrayToPeriod</td><td>Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromTimestampFieldArray</b></td><td>TimestampFieldArrayToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="a"><td><b>fromTimestampFieldArray</b></td><td>TimestampFieldArrayToPeriod</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>fromTimestampFieldCollection</b></td><td>TimestampFieldCollectionToPeriod</td><td>Chronology chronology</td><td></td></tr>
+<tr class="a"><td><b>fromTimestampFieldCollection</b></td><td>TimestampFieldCollectionToPeriod</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="b"><td><b>fromTimestampFieldCollection</b></td><td>TimestampFieldCollectionToPeriod</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+</tbody></table>
+
+ 
       </subsection>
       
     </section>
   </body>
 </document>
-

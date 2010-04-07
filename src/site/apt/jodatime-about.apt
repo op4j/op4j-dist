@@ -76,9 +76,56 @@ DateMidnight result2 = Op.on(asStr).exec(FnJodaTimeUtils.strToDateMidnight(patte
 
 * Use
 
-  This section includes some examples of the use of the classes listed above.
+  This section includes some examples of the use of the classes listed above. To learn about the methods available,
+  visit the pages:
+  
+    * {{{./jodatime-fnjodatostring.html}FnJodaToString}}  
+
+    * {{{./jodatime-fntodatemidnight.html}FnToDateMidnight}} 
+    
+    * {{{./jodatime-fntodatetime.html}FnToDateTime}} 
+    
+    * {{{./jodatime-fntointerval.html}FnToInterval}} 
+    
+    * {{{./jodatime-fntolocaldate}FnToLocalDate}} 
+    
+    * {{{./jodatime-fntolocaltime}FnToLocalTime}} 
+    
+    * {{{./jodatime-fntoperiod}FnToPeriod}} 
+    
+    []
   
 +--
-  Op.on......
+
+List<DateMidnight> targets = new ArrayList<DateMidnight>();
+targets.add(new DateMidnight());
+List<String> result = Op.onList(targets).forEach().exec(FnJodaToString
+  .fromBaseDateTime(FormatType.STYLE, "MM", Locale.UK.toString())).get(); 
+    
+/* *** */
+    
+Timestamp timestamp = new Timestamp(new Date().getTime());
+LocalTime result = Op.on(timestamp).exec(FnToLocalTime.fromTimestamp(
+  DateTimeZone.getDefault())).get();
+    
+/* *** */
+
+Interval result = Op.on(Arrays.asList("1977", "5", "2", "23", "12", "2", "34",
+  "1980", "8", "5", "12", "12", "12", "4"))
+  .exec(FnToInterval.fromStringFieldCollection(DateTimeZone.getDefault()))
+  .get();
+
+/* *** */
+     
+Interval result = Op.on(Arrays.asList("2000/02/09", "2001/09/05"))
+  .exec(FnToInterval.fromStringFieldCollection("yyyy/mm/dd", DateTimeZone.getDefault())).get();
+
+/* *** */
+ 
+Long start = Long.valueOf(1000);
+Long end = Long.valueOf(1000000);    
+Interval result = Op.on(new Long[] {start, end})
+  .exec(FnToInterval.fromLongFieldArray(GJChronology.getInstance()))
+  .get();
 +--
   
