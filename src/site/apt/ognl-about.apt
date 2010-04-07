@@ -3,3 +3,41 @@
   -------
   
 OGNL Extension
+
+  {{{http://www.opensymphony.com/ognl/}OGNL (Object-Graph Navigation Language}} is an
+  open-source expression language for getting and setting properties of Java objects.
+  
+  It is famously used as an expression language in environments like the Apache Click,
+  Spring Web Flow, WebWork and Tapestry web frameworks.
+  
+  An example <getter method navigation> equivalent to <<<getUser().getCompany().getName()>>>:
+  
++--
+user.company.name
++--
+
+  Which would be easy to use in op4j:
+  
++--
+String name =
+    Op.on(session).exec(FnOgnl.asString("user.company.name")).get();
++--
+  
+  But OGNL can do much more than just navigating getters, like:
+  
++--
+name.toCharArray()[0].numericValue.toString()
++--
+
+  See more examples at the <<Language Guide>> in the OGNL project page: {{http://www.opensymphony.com/ognl/}}
+
+
+
+* Function classes
+
+  The extension comprises only one <function hub class>:
+     
+    * {{{./ognl-fnognl.html}FnOgnl}}
+    
+  
+  
