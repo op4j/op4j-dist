@@ -27,6 +27,8 @@
       <subsection name="2. Functions">
 
 
+
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -99,6 +101,8 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>truncate</b></td><td>Function&lt;Calendar,Calendar&gt;</td><td>int calendarField</td><td></td></tr>
 </tbody></table>
+
+
 
       </subsection>
       

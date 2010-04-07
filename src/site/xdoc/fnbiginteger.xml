@@ -28,6 +28,7 @@
       <subsection name="2. Functions">
 
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -58,20 +59,12 @@
 <tr class="b"><td><b>divideBy</b></td><td>Function&lt;BigInteger, BigInteger&gt;</td><td>double divisor</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>eq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td></td></tr>
-<tr class="b"><td><b>eq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>float object</td><td></td></tr>
-<tr class="a"><td><b>eq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>double object</td><td></td></tr>
-<tr class="b"><td><b>eq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>byte object</td><td></td></tr>
-<tr class="a"><td><b>eq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>short object</td><td></td></tr>
-<tr class="b"><td><b>eq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>int object</td><td></td></tr>
-<tr class="a"><td><b>eq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>long object</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Number object</td><td></td></tr>
-<tr class="a"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />float object</td><td></td></tr>
-<tr class="b"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />double object</td><td></td></tr>
-<tr class="a"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />byte object</td><td></td></tr>
-<tr class="b"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />short object</td><td></td></tr>
-<tr class="a"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />int object</td><td></td></tr>
-<tr class="b"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />long object</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>eqValue</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>eqValueBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Number object</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>greaterOrEqTo</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td></td></tr>
 <tr class="b"><td><b>greaterOrEqTo</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>float object</td><td></td></tr>
@@ -160,20 +153,12 @@
 <tr class="b"><td><b>multiplyBy</b></td><td>Function&lt;BigInteger, BigInteger&gt;</td><td>double multiplicand</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>notEq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td></td></tr>
-<tr class="b"><td><b>notEq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>float object</td><td></td></tr>
-<tr class="a"><td><b>notEq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>double object</td><td></td></tr>
-<tr class="b"><td><b>notEq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>byte object</td><td></td></tr>
-<tr class="a"><td><b>notEq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>short object</td><td></td></tr>
-<tr class="b"><td><b>notEq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>int object</td><td></td></tr>
-<tr class="a"><td><b>notEq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>long object</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Number object</td><td></td></tr>
-<tr class="a"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />float object</td><td></td></tr>
-<tr class="b"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />double object</td><td></td></tr>
-<tr class="a"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />byte object</td><td></td></tr>
-<tr class="b"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />short object</td><td></td></tr>
-<tr class="a"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />int object</td><td></td></tr>
-<tr class="b"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />long object</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>notEqValue</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>notEqValueBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Number object</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>pow</b></td><td>Function&lt;BigInteger, BigInteger&gt;</td><td>int power</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -205,7 +190,7 @@
 <tr class="b"><td><b>toPercentStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>Locale locale<br />boolean groupingUsed</td><td></td></tr>
 <tr class="a"><td><b>toPercentStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>String locale<br />boolean groupingUsed</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>toStr</b></td><td>Function&lt;Number,String&gt;</td><td></td><td></td></tr>
+<tr class="b"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td></td><td></td></tr>
 <tr class="a"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>boolean groupingUsed</td><td></td></tr>
 <tr class="b"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>Locale locale</td><td></td></tr>
 <tr class="a"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>String locale</td><td></td></tr>
@@ -213,8 +198,10 @@
 <tr class="a"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>String locale<br />boolean groupingUsed</td><td></td></tr>
 </tbody></table>
 
+
       </subsection>
       
     </section>
   </body>
 </document>
+

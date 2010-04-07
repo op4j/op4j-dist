@@ -25,15 +25,15 @@
 
       <subsection name="2. Functions">
 
-
-      
-
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
+<tr class="b"><td><b>asciify</b></td><td>Function&lt;String,String&gt;</td><td></td><td><p> <i>ASCIIfies</i> a String containing text in (mainly) European languages by removing a set of  recognized diacritic symbols and performing a number of transformations. Calling this method is equivalent to calling {@link #asciify(AsciifyMode)} using the <tt>DEFAULT</tt> mode. </p></td></tr>
+<tr class="a"><td><b>asciify</b></td><td>Function&lt;String,String&gt;</td><td>AsciifyMode mode</td><td><p> <i>ASCIIfies</i> a String containing text in (mainly) European languages by removing a set of  recognized diacritic symbols and performing a number of transformations, determined by the <tt> AsciifyMode</tt> parameter. </p> <p> Transformations for <tt>AsciifyMode.DEFAULT</tt> are: </p> <ul>   <li>&#192;,&#193;,&#194;,&#195;,&#196;,&#197; / &#224;,&#225;,&#226;,&#227;,&#228;,&#229; = A / a</li>   <li>&#198; / &#230; = AE / ae</li>   <li>&#199; / &#231; = C / c</li>   <li>&#200;,&#201;,&#202;,&#203; / &#232;,&#233;,&#234;,&#235; = E / e</li>   <li>&#204;,&#205;,&#206;,&#207; / &#236;,&#237;,&#238;,&#239; = I / i</li>   <li>&#208; / &#240; = D / d</li>   <li>&#209; / &#241; = N / n</li>   <li>&#210;,&#211;,&#212;,&#213;,&#214;,&#216; / &#242;,&#243;,&#244;,&#245;,&#246;,&#248; = O / o</li>   <li>&#217;,&#218;,&#219;,&#220; / &#249;,&#250;,&#251;,&#252; = U / u</li>   <li>&#221; / &#253;,&#255; = Y / y</li>   <li>&#222; / &#254; = TH / th</li>   <li>&#223; = "ss" if the preceding character is lower case, "SS" otherwise.</li> </ul> <p> Transformations for <tt>AsciifyMode.UMLAUT_E</tt> are the same as <tt>DEFAULT</tt> with the following differences: </p> <ul>   <li>&#196; / &#228; = AE / ae</li>   <li>&#214; / &#246; = OE / oe</li>   <li>&#220; / &#252; = UE / ue</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>capitalize</b></td><td>Function&lt;String,String&gt;</td><td></td><td><p> Converts the first letter of each word in the target String to upper case. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>contains</b></td><td>Function&lt;String,Boolean&gt;</td><td>String regex</td><td></td></tr>
+<tr class="a"><td><b>contains</b></td><td>Function&lt;String,Boolean&gt;</td><td>String regex</td><td><p> Determines whether the target String contains a fragment matching the specified regular expression. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>eq</b></td><td>Function&lt;Object,Boolean&gt;</td><td>String object</td><td><p> Performs an <i>equals</i> operation between the target object and the specified one. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -45,11 +45,11 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>escapeXML</b></td><td>Function&lt;String,String&gt;</td><td></td><td><p> Escapes the characters in a <code>String</code> using XML entities. </p> <p> This method calls <tt>org.apache.commons.lang.StringUtils.escapeXml()</tt>. From its definition: </p> <ul>   <li>For example: <tt>"bread" &amp; "butter"</tt> =>       <tt>&amp;quot;bread&amp;quot; &amp;amp; &amp;quot;butter&amp;quot;</tt>.</li>   <li>Supports only the five basic XML entities (gt, lt, quot, amp, apos).       Does not support DTDs or external entities.</li>   <li>Note that unicode characters greater than 0x7f are currently escaped to     their numerical \\u equivalent. This may change in future releases.</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>extractAll</b></td><td>Function&lt;String,List&lt;String&gt;&gt;</td><td>String regex</td><td></td></tr>
+<tr class="a"><td><b>extractAll</b></td><td>Function&lt;String,List&lt;String&gt;&gt;</td><td>String regex</td><td><p> Extracts every substring from the target String that match the specified regular expression. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>extractFirst</b></td><td>Function&lt;String,String&gt;</td><td>String regex</td><td></td></tr>
+<tr class="b"><td><b>extractFirst</b></td><td>Function&lt;String,String&gt;</td><td>String regex</td><td><p> Extracts the first substring from the target String that matches the specified regular expression. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>extractLast</b></td><td>Function&lt;String,String&gt;</td><td>String regex</td><td></td></tr>
+<tr class="a"><td><b>extractLast</b></td><td>Function&lt;String,String&gt;</td><td>String regex</td><td><p> Extracts the last substring from the target String that matches the specified regular expression. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>fromHexadecimal</b></td><td>Function&lt;String,String&gt;</td><td>Charset charset</td><td><p> Converts the target String from the Hexadecimal representation of its bytes back into  a String using the specified Charset. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -61,35 +61,35 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>isNull</b></td><td>Function&lt;Object,Boolean&gt;</td><td></td><td><p> Returns whether the target object is null or not (true = yes). </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>join</b></td><td>Function&lt;List&lt;Object&gt;, String&gt;</td><td></td><td>Joins the string representation of the objects in the list into a single String  (no separator used)</td></tr>
-<tr class="b"><td><b>join</b></td><td>Function&lt;List&lt;Object&gt;, String&gt;</td><td>String separator</td><td>Joins the string representation of the objects in the list into a single String  using the given separator</td></tr>
+<tr class="a"><td><b>join</b></td><td>Function&lt;List&lt;Object&gt;, String&gt;</td><td></td><td><p> Joins the string representation of the objects in the list (which might be Strings themselves) into a single String (no separator used). </p></td></tr>
+<tr class="b"><td><b>join</b></td><td>Function&lt;List&lt;Object&gt;, String&gt;</td><td>String separator</td><td><p> Joins the string representation of the objects in the list (which might be Strings themselves) into a single String using the given separator. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>joinArray</b></td><td>Function&lt;Object[], String&gt;</td><td></td><td>Joins the string representation of the objects in the array into a single String  (no separator used)</td></tr>
-<tr class="b"><td><b>joinArray</b></td><td>Function&lt;Object[], String&gt;</td><td>String separator</td><td>Joins the string representation of the objects in the array into a single String  using the given separator</td></tr>
+<tr class="a"><td><b>joinArray</b></td><td>Function&lt;Object[], String&gt;</td><td></td><td><p> Joins the string representation of the objects in the array (which might be Strings themselves) into a single String (no separator used). </p></td></tr>
+<tr class="b"><td><b>joinArray</b></td><td>Function&lt;Object[], String&gt;</td><td>String separator</td><td><p> Joins the string representation of the objects in the array (which might be Strings themselves) into a single String using the given separator. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>lessOrEqTo</b></td><td>Function&lt;Object,Boolean&gt;</td><td>String object</td><td><p> Returns whether the target object is less or equal (using natural order, which is alphabetic for strings) to the specified object. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>lessThan</b></td><td>Function&lt;Object,Boolean&gt;</td><td>String object</td><td><p> Returns whether the target object is less (using natural order, which is alphabetic for strings) than the specified object. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>matchAndExtract</b></td><td>Function&lt;String,String&gt;</td><td>String regex<br />int group</td><td></td></tr>
+<tr class="a"><td><b>matchAndExtract</b></td><td>Function&lt;String,String&gt;</td><td>String regex<br />int group</td><td><p> Matches the entire target String against the specified regular expression and extracts the specified group from it (as specified by <tt>java.util.regex.Matcher</tt>. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>matchAndExtractAll</b></td><td>Function&lt;String,List&lt;String&gt;&gt;</td><td>String regex<br />int... groups</td><td></td></tr>
+<tr class="b"><td><b>matchAndExtractAll</b></td><td>Function&lt;String,List&lt;String&gt;&gt;</td><td>String regex<br />int... groups</td><td><p> Matches the entire target String against the specified regular expression and extracts the specified groups from it (as specified by <tt>java.util.regex.Matcher</tt>. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>matches</b></td><td>Function&lt;String,Boolean&gt;</td><td>String regex</td><td></td></tr>
+<tr class="a"><td><b>matches</b></td><td>Function&lt;String,Boolean&gt;</td><td>String regex</td><td><p> Determines whether the target String matches the specified regular expression. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>notEq</b></td><td>Function&lt;Object,Boolean&gt;</td><td>String object</td><td><p> Performs an inverse <i>equals</i> operation between the target object and the specified one. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>replaceAll</b></td><td>Function&lt;String,String&gt;</td><td>String regex<br />String replacement</td><td></td></tr>
+<tr class="a"><td><b>replaceAll</b></td><td>Function&lt;String,String&gt;</td><td>String regex<br />String replacement</td><td><p> Replaces in the target String all substrings matching the specified regular expression with the specified replacement String. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>replaceFirst</b></td><td>Function&lt;String,String&gt;</td><td>String regex<br />String replacement</td><td></td></tr>
+<tr class="b"><td><b>replaceFirst</b></td><td>Function&lt;String,String&gt;</td><td>String regex<br />String replacement</td><td><p> Replaces in the target String the first substring matching the specified regular expression with the specified replacement String. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>replaceLast</b></td><td>Function&lt;String,String&gt;</td><td>String regex<br />String replacement</td><td></td></tr>
+<tr class="a"><td><b>replaceLast</b></td><td>Function&lt;String,String&gt;</td><td>String regex<br />String replacement</td><td><p> Replaces in the target String the last substring matching the specified regular expression with the specified replacement String. </p> <p> Regular expressions must conform to the <tt>java.util.regex.Pattern</tt> format. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>split</b></td><td>Function&lt;String, List&lt;String&gt;&gt;</td><td></td><td>Splits a String into a list of substrings using the whitespace as the separator</td></tr>
-<tr class="a"><td><b>split</b></td><td>Function&lt;String, List&lt;String&gt;&gt;</td><td>String separator</td><td>Splits a String into a list of substrings using the given separator as the substrings separator (the separator is not included in the returned list)</td></tr>
+<tr class="b"><td><b>split</b></td><td>Function&lt;String, List&lt;String&gt;&gt;</td><td></td><td><p> Splits a String into a list of substrings using a whitespace as a separator. </p></td></tr>
+<tr class="a"><td><b>split</b></td><td>Function&lt;String, List&lt;String&gt;&gt;</td><td>String separator</td><td><p> Splits a String into a list of substrings using the given separator as a substrings separator (the separator is not included in the elements of the returned list). </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>splitAsArray</b></td><td>Function&lt;String, String[]&gt;</td><td></td><td>Splits a String into an array of substrings using the whitespace as the separator</td></tr>
-<tr class="a"><td><b>splitAsArray</b></td><td>Function&lt;String, String[]&gt;</td><td>String separator</td><td>Splits a String into an array of substrings using the given separator as the substrings separator (the separator is not included in the returned list)</td></tr>
+<tr class="b"><td><b>splitAsArray</b></td><td>Function&lt;String, String[]&gt;</td><td></td><td><p> Splits a String into an array of substrings using a whitespace as a separator. </p></td></tr>
+<tr class="a"><td><b>splitAsArray</b></td><td>Function&lt;String, String[]&gt;</td><td>String separator</td><td><p> Splits a String into an array of substrings using the given separator as a substrings separator (the separator is not included in the elements of the returned array). </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>strip</b></td><td>Function&lt;String,String&gt;</td><td></td><td><p> Strips whitespace from both sides of the target String. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -137,7 +137,7 @@
 <tr class="b"><td><b>toDouble</b></td><td>Function&lt;String,Double&gt;</td><td>String locale</td><td><p> Converts a String into a Double, using the specified locale for decimal point and thousands separator configuration. Locale is specified as a String (for example: "en_US", "es_ES", etc.) </p></td></tr>
 <tr class="a"><td><b>toDouble</b></td><td>Function&lt;String,Double&gt;</td><td>DecimalPoint decimalPoint</td><td><p> Converts a String into a Double, using the specified decimal point configuration ( DecimalPoint). The target String should contain no thousand separators. </p></td></tr>
 <tr class="b"><td><b>toDouble</b></td><td>Function&lt;String,Double&gt;</td><td>int scale<br />RoundingMode roundingMode</td><td><p> Converts a String into a Double, using the default configuration for for decimal point and thousands separator and establishing the specified scale. Rounding mode is used for setting the scale to the specified value.  </p></td></tr>
-<tr class="a"><td><b>toDouble</b></td><td>Function&lt;String,Double&gt;</td><td>int scale<br />RoundingMode roundingMode<br />Locale locale</td><td><p> Converts a String into a Double, using the specified decimal point configuration ( DecimalPoint) and establishing the specified scale. Rounding mode is used for setting the scale to the specified value.. The target String should contain no thousand separators. </p></td></tr>
+<tr class="a"><td><b>toDouble</b></td><td>Function&lt;String,Double&gt;</td><td>int scale<br />RoundingMode roundingMode<br />Locale locale</td><td><p> Converts a String into a Double, using the specified locale for decimal point and thousands separator configuration and establishing the specified scale. Rounding mode is used for setting the scale to the specified value. </p></td></tr>
 <tr class="b"><td><b>toDouble</b></td><td>Function&lt;String,Double&gt;</td><td>int scale<br />RoundingMode roundingMode<br />String locale</td><td><p> Converts a String into a Double, using the specified locale for decimal point and thousands separator configuration and establishing the specified scale. Rounding mode is used for setting the scale to the specified value.  Locale is specified as a String (for example: "en_US", "es_ES", etc.) </p></td></tr>
 <tr class="a"><td><b>toDouble</b></td><td>Function&lt;String,Double&gt;</td><td>int scale<br />RoundingMode roundingMode<br />DecimalPoint decimalPoint</td><td><p> Converts a String into a Double, using the specified decimal point configuration ( DecimalPoint) and establishing the specified scale. Rounding mode is used for setting the scale to the specified value.. The target String should contain no thousand separators. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -146,7 +146,7 @@
 <tr class="b"><td><b>toFloat</b></td><td>Function&lt;String,Float&gt;</td><td>String locale</td><td><p> Converts a String into a Float, using the specified locale for decimal point and thousands separator configuration. Locale is specified as a String (for example: "en_US", "es_ES", etc.) </p></td></tr>
 <tr class="a"><td><b>toFloat</b></td><td>Function&lt;String,Float&gt;</td><td>DecimalPoint decimalPoint</td><td><p> Converts a String into a Float, using the specified decimal point configuration ( DecimalPoint). The target String should contain no thousand separators. </p></td></tr>
 <tr class="b"><td><b>toFloat</b></td><td>Function&lt;String,Float&gt;</td><td>int scale<br />RoundingMode roundingMode</td><td><p> Converts a String into a Float, using the default configuration for for decimal point and thousands separator and establishing the specified scale. Rounding mode is used for setting the scale to the specified value.  </p></td></tr>
-<tr class="a"><td><b>toFloat</b></td><td>Function&lt;String,Float&gt;</td><td>int scale<br />RoundingMode roundingMode<br />Locale locale</td><td><p> Converts a String into a Float, using the specified decimal point configuration ( DecimalPoint) and establishing the specified scale. Rounding mode is used for setting the scale to the specified value.. The target String should contain no thousand separators. </p></td></tr>
+<tr class="a"><td><b>toFloat</b></td><td>Function&lt;String,Float&gt;</td><td>int scale<br />RoundingMode roundingMode<br />Locale locale</td><td><p> Converts a String into a Float, using the specified locale for decimal point and thousands separator configuration and establishing the specified scale. Rounding mode is used for setting the scale to the specified value. </p></td></tr>
 <tr class="b"><td><b>toFloat</b></td><td>Function&lt;String,Float&gt;</td><td>int scale<br />RoundingMode roundingMode<br />String locale</td><td><p> Converts a String into a Float, using the specified locale for decimal point and thousands separator configuration and establishing the specified scale. Rounding mode is used for setting the scale to the specified value.  Locale is specified as a String (for example: "en_US", "es_ES", etc.) </p></td></tr>
 <tr class="a"><td><b>toFloat</b></td><td>Function&lt;String,Float&gt;</td><td>int scale<br />RoundingMode roundingMode<br />DecimalPoint decimalPoint</td><td><p> Converts a String into a Float, using the specified decimal point configuration ( DecimalPoint) and establishing the specified scale. Rounding mode is used for setting the scale to the specified value.. The target String should contain no thousand separators. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -198,6 +198,8 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>unescapeXML</b></td><td>Function&lt;String,String&gt;</td><td></td><td><p> Unescapes a string containing XML entity escapes to a string containing the actual Unicode characters corresponding to the escapes. </p> <p> This method calls <tt>org.apache.commons.lang.StringUtils.unescapeXml()</tt>. From its definition: </p> <ul>   <li>Supports only the five basic XML entities (gt, lt, quot, amp, apos).       Does not support DTDs or external entities.</li>   <li>Note that numerical \\u unicode codes are unescaped to their respective        unicode characters. This may change in future releases.</li> </ul></td></tr>
 </tbody></table>
+
+
 
 </subsection>
       

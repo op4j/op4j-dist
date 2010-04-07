@@ -72,51 +72,52 @@ Op.onMapFor(Integer.valueOf(0), "all").put(Integer.valueOf(1), "first")
         
         <div>
         <!-- Table with functions -->
-        <table border="0">
-		<thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
-		<tbody>
-		<tr class="b"><td><b>all</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>IFunction&lt;? super Map.Entry&lt;K,V&gt;,Boolean&gt; eval</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>any</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>IFunction&lt;? super Map.Entry&lt;K,V&gt;,Boolean&gt; eval</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>containsAllKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K... keys</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>containsAnyKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K... keys</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>containsKey</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K key</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>containsNoneKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K... keys</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>count</b></td><td>Function&lt;Map&lt;?,?&gt;,Integer&gt;</td><td></td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>extractKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Set&lt;K&gt;&gt;</td><td></td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>extractValues</b></td><td>Function&lt;Map&lt;K,V&gt;,List&lt;V&gt;&gt;</td><td></td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>insert</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>int position<br />K key<br />V value</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>insertAll</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>int position<br />Map&lt;K,V&gt; map</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>notContainsKey</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K key</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>put</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>K key<br />V value</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>putAll</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>Map&lt;K,V&gt; map</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>removeAllFalse</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super Entry&lt;K,V&gt;,Boolean&gt; eval</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>removeAllKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>K... keys</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>removeAllKeysNot</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>K... keys</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>removeAllTrue</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super Entry&lt;K,V&gt;,Boolean&gt; eval</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>reverse</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td></td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="a"><td><b>sortBy</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super Map.Entry&lt;K,V&gt;, ?&gt; by</td><td></td></tr>
-		<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-		<tr class="b"><td><b>sortEntries</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>Comparator&lt;? super Entry&lt;K,V&gt;&gt; comparator</td><td></td></tr>
-		</tbody></table>        
+
+<table border="0">
+<thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
+<tbody>
+<tr class="b"><td><b>all</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>IFunction&lt;? super Map.Entry&lt;K,V&gt;,Boolean&gt; eval</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>any</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>IFunction&lt;? super Map.Entry&lt;K,V&gt;,Boolean&gt; eval</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>containsAllKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K... keys</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>containsAnyKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K... keys</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>containsKey</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K key</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>containsNoneKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K... keys</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>count</b></td><td>Function&lt;Map&lt;?,?&gt;,Integer&gt;</td><td></td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>extractKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Set&lt;K&gt;&gt;</td><td></td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>extractValues</b></td><td>Function&lt;Map&lt;K,V&gt;,List&lt;V&gt;&gt;</td><td></td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>insert</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>int position<br />K key<br />V value</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>insertAll</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>int position<br />Map&lt;K,V&gt; map</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>notContainsKey</b></td><td>Function&lt;Map&lt;K,V&gt;,Boolean&gt;</td><td>K key</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>put</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>K key<br />V value</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>putAll</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>Map&lt;K,V&gt; map</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>removeAllFalse</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super Entry&lt;K,V&gt;,Boolean&gt; eval</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>removeAllKeys</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>K... keys</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>removeAllKeysNot</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>K... keys</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>removeAllTrue</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super Entry&lt;K,V&gt;,Boolean&gt; eval</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>reverse</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td></td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>sortBy</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super Map.Entry&lt;K,V&gt;, ?&gt; by</td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>sortEntries</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>Comparator&lt;? super Entry&lt;K,V&gt;&gt; comparator</td><td></td></tr>
+</tbody></table>        
         <!--  -->
         </div>
       
