@@ -243,12 +243,30 @@ Map<Integer,String> map =
     Op.onArrayFor(1,2).zipValues("a","b").get();
 +--
 
+  ...using a collection...
+  
++--
+Collection<String> values = {"a", "b"};
+// map = {{1="a"}, {2="b"}}
+Map<Integer,String> map = 
+    Op.onArrayFor(1,2).zipValuesFrom(values).get();
++--
+
   Or similarly:
   
 +--
 // map = {{"a"=1}, {"b"=2}}
 Map<String,Integer> map = 
     Op.onArrayFor(1,2).zipKeys("a","b").get();
++--
+
+  ...using a collection...
+  
++--
+Collection<String> keys = {"a", "b"};
+// map = {{"a"=1}, {"b"=2}}
+Map<String,Integer> map = 
+    Op.onArrayFor(1,2).zipKeysFrom(keys).get();
 +--
 
   Alternatively, a function can be used for evaluating existing elements and obtaining keys or values:
@@ -425,7 +443,7 @@ Op.on(array).forEach().exec(FnString.toUpperCase())...
   <<<FnString.toUpperCase()>>> was executable this way because it is an <<<IFunction\<String,String\>>>>,
   and so it would not change the array element type.
   
-  A condition can be added for <null-saving> a function execution, if needed:
+  A condition can be added for conditional execution, if needed:
 
 +--
 String[] array = ...;
@@ -433,7 +451,28 @@ IFunction<String,String> myFunction = ...;
 ...
 Op.on(array).forEach().execIfNotNull(myFunction)...
 +--
-  
+
++--
+String[] array = ...;
+IFunction<String,Boolean> condition = ...;
+IFunction<String,String> myFunction = ...;
+...
+Op.on(array).forEach().execIfTrue(condition, myFunction)...
++--
+
+  ...an <else> side can it also be added, in which case the expression can change the type
+  of the operator:   
+
++--
+String[] array = ...;
+IFunction<String,Boolean> condition = ...;
+IFunction<String,Integer> myThenFunction = ...;
+IFunction<String,Integer> myElseFunction = ...;
+...
+Integer[] newArray = 
+    Op.on(array).forEach().execIfTrue(condition, myThenFunction, myElseFunction).get();
++--
+
 
 *** Changing the array element type
 
@@ -474,7 +513,7 @@ IFunction<String[],String[]> myFunction = ...;
 Op.on(array).execAsArray(myFunction)...
 +--
 
-  A not-null check can be added:  
+  A conditional check can be added (null, not null, condition true, condition false):  
 
 +--
 String[] array = ...;
@@ -617,10 +656,6 @@ IFunction<String,Boolean> eval = ...;
 ...
 Op.on(array).forEach().ifTrue(eval)...
 Op.on(array).forEach().ifFalse(eval)...
-Op.on(array).forEach().ifNullOrTrue(eval)...
-Op.on(array).forEach().ifNullOrFalse(eval)...
-Op.on(array).forEach().ifNotNullAndTrue(eval)...
-Op.on(array).forEach().ifNotNullAndFalse(eval)...
 +--
 
 
@@ -638,10 +673,6 @@ Op.on(array).ifNull()....
 Op.on(array).ifNotNull()....
 Op.on(array).ifTrue(eval)...
 Op.on(array).ifFalse(eval)...
-Op.on(array).ifNullOrTrue(eval)...
-Op.on(array).ifNullOrFalse(eval)...
-Op.on(array).ifNotNullAndTrue(eval)...
-Op.on(array).ifNotNullAndFalse(eval)...
 +--
 
 

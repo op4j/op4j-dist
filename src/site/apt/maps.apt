@@ -207,7 +207,7 @@ Map<String,String> newMap =
     Op.on(map).forEachEntry().onValue().exec(FnString.toUpperCase()).get();
 +--
 
-  A condition can be added for <null-saving> a function execution, if needed:
+  A condition can be added for conditional execution, if needed:
 
 +--
 Map<String,String> map = ...;
@@ -215,6 +215,27 @@ IFunction<String,String> myFunction = ...;
 ...
 Map<String,String> newMap = 
     Op.on(map).forEachEntry().onValue().execIfNotNull(myFunction).get();
++--
+
++--
+Map<String,String> map = ...;
+IFunction<String,Boolean> condition = ...;
+IFunction<String,String> myFunction = ...;
+...
+Op.on(map).forEachEntry().onValue().execIfTrue(condition, myFunction)...
++--
+
+  ...an <else> side can it also be added, in which case the expression can change the type
+  of the operator:   
+
++--
+Map<String,String> map = ...;
+IFunction<String,Boolean> condition = ...;
+IFunction<String,Integer> myThenFunction = ...;
+IFunction<String,Integer> myElseFunction = ...;
+...
+Map<String,Integer> newMap = ...;
+    Op.on(map).forEachEntry().onValue().execIfTrue(condition, myThenFunction, myElseFunction).get();
 +--
 
 
@@ -269,7 +290,7 @@ IFunction<Map<String,String>,Map<String,Integer>> myFunction = ...;
 Op.on(map).execAsMap(myFunction)...
 +--
 
-  A not-null check can be added:  
+  A conditional check can be added (null, not null, condition true, condition false):  
 
 +--
 Map<String,String> map = ...;
@@ -336,10 +357,6 @@ IFunction<String,Boolean> eval = ...;
 ...
 Op.on(map).forEachEntry().onValue().ifTrue(eval)...
 Op.on(map).forEachEntry().onValue().ifFalse(eval)...
-Op.on(map).forEachEntry().onValue().ifNullOrTrue(eval)...
-Op.on(map).forEachEntry().onValue().ifNullOrFalse(eval)...
-Op.on(map).forEachEntry().onValue().ifNotNullAndTrue(eval)...
-Op.on(map).forEachEntry().onValue().ifNotNullAndFalse(eval)...
 +--
   
   
@@ -388,10 +405,6 @@ Op.on(map).ifNull()....
 Op.on(map).ifNotNull()....
 Op.on(map).ifTrue(eval)...
 Op.on(map).ifFalse(eval)...
-Op.on(map).ifNullOrTrue(eval)...
-Op.on(map).ifNullOrFalse(eval)...
-Op.on(map).ifNotNullAndTrue(eval)...
-Op.on(map).ifNotNullAndFalse(eval)...
 +--
 
 

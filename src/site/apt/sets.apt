@@ -173,12 +173,30 @@ Map<Integer,String> map =
     Op.onSetFor(1,2).zipValues("a","b").get();
 +--
 
+  ...using a collection...
+  
++--
+Collection<String> values = {"a", "b"};
+// map = {{1="a"}, {2="b"}}
+Map<Integer,String> map = 
+    Op.onArrayFor(1,2).zipValuesFrom(values).get();
++--
+
   Or similarly:
   
 +--
 // map = {{"a"=1}, {"b"=2}}
 Map<String,Integer> map = 
     Op.onSetFor(1,2).zipKeys("a","b").get();
++--
+
+  ...using a collection...
+  
++--
+Collection<String> keys = {"a", "b"};
+// map = {{"a"=1}, {"b"=2}}
+Map<String,Integer> map = 
+    Op.onSetFor(1,2).zipKeysFrom(keys).get();
 +--
 
   Alternatively, a function can be used for evaluating existing elements and obtaining keys or values:
@@ -335,12 +353,33 @@ Set<String> set = ...;
 Set<String> newSet = Op.on(set).forEach().exec(FnString.toUpperCase()).get();
 +--
 
-  A condition can be added for <null-saving> a function execution, if needed:
+  A condition can be added for conditional execution, if needed:
 
 +--
 Set<String> set = ...;
 ...
 Set<Integer> newList = Op.on(set).forEach().execIfNotNull(FnString.toInteger()).get();
++--
+
++--
+Set<String> set = ...;
+IFunction<String,Boolean> condition = ...;
+IFunction<String,String> myFunction = ...;
+...
+Op.on(set).forEach().execIfTrue(condition, myFunction)...
++--
+
+  ...an <else> side can it also be added, in which case the expression can change the type
+  of the operator:   
+
++--
+Set<String> set = ...;
+IFunction<String,Boolean> condition = ...;
+IFunction<String,Integer> myThenFunction = ...;
+IFunction<String,Integer> myElseFunction = ...;
+...
+Set<String> newSet = ...;
+    Op.on(set).forEach().execIfTrue(condition, myThenFunction, myElseFunction).get();
 +--
 
 
@@ -368,7 +407,7 @@ IFunction<Set<String>,Set<Integer>> myFunction = ...;
 Op.on(set).execAsSet(myFunction)...
 +--
 
-  A not-null check can be added:  
+  A conditional check can be added (null, not null, condition true, condition false):  
 
 +--
 Set<String> set = ...;
@@ -476,10 +515,6 @@ IFunction<String,Boolean> eval = ...;
 ...
 Op.on(set).forEach().ifTrue(eval)...
 Op.on(set).forEach().ifFalse(eval)...
-Op.on(set).forEach().ifNullOrTrue(eval)...
-Op.on(set).forEach().ifNullOrFalse(eval)...
-Op.on(set).forEach().ifNotNullAndTrue(eval)...
-Op.on(set).forEach().ifNotNullAndFalse(eval)...
 +--
 
 
@@ -497,10 +532,6 @@ Op.on(set).ifNull()....
 Op.on(set).ifNotNull()....
 Op.on(set).ifTrue(eval)...
 Op.on(set).ifFalse(eval)...
-Op.on(set).ifNullOrTrue(eval)...
-Op.on(set).ifNullOrFalse(eval)...
-Op.on(set).ifNotNullAndTrue(eval)...
-Op.on(set).ifNotNullAndFalse(eval)...
 +--
 
 
