@@ -6,15 +6,30 @@ op4j dependencies on other libraries
   
   op4j depends on the following libraries:
   
+    * javaRuntype 1.1 or later
+  
     * Apache Commons-Lang 2.4 or later
+
+
+op4j-ognl dependencies on other libraries
   
-    * Apache Commons-Collections 3.1 or later
+  The op4j-ognl extension depends on the following libraries (besides the op4j core itself):
   
-    * Apache Commons-Codec 1.3 (do NOT use the severely flawed Commons-Codec 1.4 version)
+    * javaRuntype 1.1 or later
+  
+    * Apache Commons-Lang 2.4 or later
   
     * OGNL 2.7.1 or later
   
     * Javassist 3.6.ga or later
+
+
+op4j-jodatime dependencies on other libraries
   
-    * javaRuntype 1.0 or later
+  The op4j-jodatime extension depends on the following libraries (besides the op4j core itself):
+  
+    * Apache Commons-Lang 2.4 or later
+  
+    * Joda-Time 1.6 or later.
+  
   

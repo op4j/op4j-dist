@@ -2,11 +2,7 @@
   Main
   -------
 
-  <<op4j 1.0-beta2 RELEASED!>> (March 24th, 2010). <<{{{./download.html}[DOWNLOAD]}}>> <<{{{http://www.op4j.org/ChangeLog.txt}[CHANGELOG]}}>>
-
-  <<UPDATE (March 25th, 2010): NEW op4j RECIPES BLOG>>. {{{http://www.bendingthejavaspoon.com}Bending
-  the Java spoon [www.bendingthejavaspoon.com]}} is a blog dedicated to publishing news and recipes (small, practical
-  examples) for using op4j. Fresh smart coding ideas delivered to your news reader! 
+  <<op4j 1.0-beta3 RELEASED!>> (April 8th, 2010). <<{{{./download.html}[DOWNLOAD]}}>> <<{{{http://www.op4j.org/ChangeLog.txt}[CHANGELOG]}}>>
 
   This software is in beta stage, although fairly stable and tested already. Online
   documentation is still work in progress. An official stable release is intended for Spring 2010.\
@@ -26,11 +22,18 @@ op4j: Bending the Java spoon
   functions to your objects in a fluid and readable way. This improves the way your code looks and 
   greatly reduces the complexity of executing auxiliary low-level tasks in the highly bureaucratic, statically 
   -and strongly- typed language that Java is.  
+  
+  But also, op4j is a huge repository of more than <<one thousand functions>> ready to be used
+  in your expressions. From regular expression matching on Strings to locale-savvy number conversion,
+  to easy Calendar creation. Check the <FnX function hub classes> online documentation to know more.
 
   op4j is open source, and it is distributed under the terms of the Apache License 2.0.
   
-  Read the quick example below, have a look at the <<{{{./basics.html}Basics}}>> page or choose any link from the
-  menu on the left.
+  op4j has an <<EXAMPLE RECIPES BLOG>> called {{{http://www.bendingthejavaspoon.com}Bending the Java spoon}}, where
+  you can find simple and explanatory examples on how to use the library.
+  
+  For knowing more, read the quick example below, have a look at the <<{{{./basics.html}Basics}}>> page or choose 
+  any link from the menu on the left.
  
   
 * A very quick overview example
