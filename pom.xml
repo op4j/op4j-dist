@@ -4,7 +4,7 @@
   <groupId>org.op4j</groupId>
   <artifactId>op4j-dist</artifactId>
   <packaging>pom</packaging>
-  <version>1.0-beta3-SNAPSHOT</version>
+  <version>1.0-beta4-SNAPSHOT</version>
   <name>op4j-dist</name>
   <description>op4j-dist</description>
   <url>http://www.op4j.org</url>
@@ -109,7 +109,7 @@
                 <descriptor>${basedir}/src/assembly/dist.xml</descriptor>
               </descriptors>
               <appendAssemblyId>true</appendAssemblyId>
-              <finalName>${artifactId}-${version}</finalName>
+              <finalName>op4j-${version}</finalName>
             </configuration>
           </execution>
         </executions>
