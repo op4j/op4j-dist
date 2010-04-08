@@ -28,7 +28,7 @@
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
-<tr class="b"><td><b>asciify</b></td><td>Function&lt;String,String&gt;</td><td></td><td><p> <i>ASCIIfies</i> a String containing text in (mainly) European languages by removing a set of  recognized diacritic symbols and performing a number of transformations. Calling this method is equivalent to calling {@link #asciify(AsciifyMode)} using the <tt>DEFAULT</tt> mode. </p></td></tr>
+<tr class="b"><td><b>asciify</b></td><td>Function&lt;String,String&gt;</td><td></td><td><p> <i>ASCIIfies</i> a String containing text in (mainly) European languages by removing a set of  recognized diacritic symbols and performing a number of transformations. Calling this method is equivalent to calling asciify(AsciifyMode) using the <tt>DEFAULT</tt> mode. </p></td></tr>
 <tr class="a"><td><b>asciify</b></td><td>Function&lt;String,String&gt;</td><td>AsciifyMode mode</td><td><p> <i>ASCIIfies</i> a String containing text in (mainly) European languages by removing a set of  recognized diacritic symbols and performing a number of transformations, determined by the <tt> AsciifyMode</tt> parameter. </p> <p> Transformations for <tt>AsciifyMode.DEFAULT</tt> are: </p> <ul>   <li>&#192;,&#193;,&#194;,&#195;,&#196;,&#197; / &#224;,&#225;,&#226;,&#227;,&#228;,&#229; = A / a</li>   <li>&#198; / &#230; = AE / ae</li>   <li>&#199; / &#231; = C / c</li>   <li>&#200;,&#201;,&#202;,&#203; / &#232;,&#233;,&#234;,&#235; = E / e</li>   <li>&#204;,&#205;,&#206;,&#207; / &#236;,&#237;,&#238;,&#239; = I / i</li>   <li>&#208; / &#240; = D / d</li>   <li>&#209; / &#241; = N / n</li>   <li>&#210;,&#211;,&#212;,&#213;,&#214;,&#216; / &#242;,&#243;,&#244;,&#245;,&#246;,&#248; = O / o</li>   <li>&#217;,&#218;,&#219;,&#220; / &#249;,&#250;,&#251;,&#252; = U / u</li>   <li>&#221; / &#253;,&#255; = Y / y</li>   <li>&#222; / &#254; = TH / th</li>   <li>&#223; = "ss" if the preceding character is lower case, "SS" otherwise.</li> </ul> <p> Transformations for <tt>AsciifyMode.UMLAUT_E</tt> are the same as <tt>DEFAULT</tt> with the following differences: </p> <ul>   <li>&#196; / &#228; = AE / ae</li>   <li>&#214; / &#246; = OE / oe</li>   <li>&#220; / &#252; = UE / ue</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>capitalize</b></td><td>Function&lt;String,String&gt;</td><td></td><td><p> Converts the first letter of each word in the target String to upper case. </p></td></tr>
@@ -206,3 +206,5 @@
     </section>
   </body>
 </document>
+
+
