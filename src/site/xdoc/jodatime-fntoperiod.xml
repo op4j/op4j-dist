@@ -25,74 +25,77 @@
 
       <subsection name="2. Functions">
 
-       
 
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
-<tr class="b"><td><b>fromBaseDateTimeFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td></td><td></td></tr>
-<tr class="a"><td><b>fromBaseDateTimeFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="b"><td><b>fromBaseDateTimeFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="a"><td><b>fromBaseDateTimeFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromBaseDateTimeFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td></td><td><p> It creates a  Period represented by the given start and end instants </p></td></tr>
+<tr class="a"><td><b>fromBaseDateTimeFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>Chronology chronology</td><td><p> It creates a  Period with the specified  Chronology. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
+<tr class="b"><td><b>fromBaseDateTimeFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType</td><td><p> It creates a  Period with the specified  PeriodType. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
+<tr class="a"><td><b>fromBaseDateTimeFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> It creates a  Period with the specified  PeriodType and  Chronology. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromBaseDateTimeFieldCollection</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="a"><td><b>fromBaseDateTimeFieldCollection</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="b"><td><b>fromBaseDateTimeFieldCollection</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromBaseDateTimeFieldCollection</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Period&gt;</td><td></td><td><p> It creates a  Period represented by the given start and end instants </p></td></tr>
+<tr class="a"><td><b>fromBaseDateTimeFieldCollection</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Period&gt;</td><td>Chronology chronology</td><td><p> It creates a  Period with the specified  Chronology. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
+<tr class="b"><td><b>fromBaseDateTimeFieldCollection</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> It creates a  Period with the specified  PeriodType. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
+<tr class="a"><td><b>fromBaseDateTimeFieldCollection</b></td><td>Function&lt;Collection&lt;? extends BaseDateTime&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> It creates a  Period with the specified  PeriodType and  Chronology. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromCalendarFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td></td><td></td></tr>
-<tr class="b"><td><b>fromCalendarFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="a"><td><b>fromCalendarFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="b"><td><b>fromCalendarFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromCalendarFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td></td><td><p> It creates a  Period represented by the given start and end instants  </p></td></tr>
+<tr class="a"><td><b>fromCalendarFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>Chronology chronology</td><td><p> It creates a  Period with the specified  Chronology. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
+<tr class="b"><td><b>fromCalendarFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType</td><td><p> It creates a  Period with the specified  PeriodType. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
+<tr class="a"><td><b>fromCalendarFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> It creates a  Period with the specified  PeriodType and  Chronology. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromCalendarFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Calendar&gt;, Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="b"><td><b>fromCalendarFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Calendar&gt;, Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="a"><td><b>fromCalendarFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Calendar&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromCalendarFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Calendar&gt;, Period&gt;</td><td></td><td><p> It creates a  Period represented by the given start and end instants. The input received by the  Function must have size 2 </p></td></tr>
+<tr class="a"><td><b>fromCalendarFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Calendar&gt;, Period&gt;</td><td>Chronology chronology</td><td><p> It creates a  Period with the specified  Chronology. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
+<tr class="b"><td><b>fromCalendarFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Calendar&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> It creates a  Period with the specified  PeriodType. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
+<tr class="a"><td><b>fromCalendarFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Calendar&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> It creates a  Period with the specified  PeriodType and  Chronology. The input received by the  Function  must have size 2 and represents the start and end instants of the  Period </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromDateFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td></td><td></td></tr>
-<tr class="a"><td><b>fromDateFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="b"><td><b>fromDateFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="a"><td><b>fromDateFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromDateFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td></td><td><p> The function receives an Array of two  Date elements used as the start and end of the  Period it creates </p></td></tr>
+<tr class="a"><td><b>fromDateFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>Chronology chronology</td><td><p> The function receives an Array of two  Date elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  Chronology </p></td></tr>
+<tr class="b"><td><b>fromDateFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType</td><td><p> The function receives an Array of two  Date elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  PeriodType </p></td></tr>
+<tr class="a"><td><b>fromDateFieldArray</b></td><td>Function&lt;T[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> The function receives an Array of two  Date elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  PeriodType and  Chronology </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromDateFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Period&gt;</td><td></td><td></td></tr>
-<tr class="a"><td><b>fromDateFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="b"><td><b>fromDateFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="a"><td><b>fromDateFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromDateFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Period&gt;</td><td></td><td><p> The function receives a  Collection of two  Date elements used as the start and end of the  Period it creates </p></td></tr>
+<tr class="a"><td><b>fromDateFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Period&gt;</td><td>Chronology chronology</td><td><p> The function receives a  Collection of two  Date elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  Chronology </p></td></tr>
+<tr class="b"><td><b>fromDateFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> The function receives a  Collection of two  Date elements used as the start and end of the  Period it creates. The  Period will be created using the specified  PeriodType </p></td></tr>
+<tr class="a"><td><b>fromDateFieldCollection</b></td><td>Function&lt;Collection&lt;? extends Date&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> The function receives a  Collection of two  Date elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  PeriodType and  Chronology </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromIntegerFieldArray</b></td><td>Function&lt;Integer[], Period&gt;</td><td></td><td></td></tr>
-<tr class="a"><td><b>fromIntegerFieldArray</b></td><td>Function&lt;Integer[], Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="b"><td><b>fromIntegerFieldArray</b></td><td>Function&lt;Integer[], Period&gt;</td><td></td><td><p> It creates a Period either: </p> <ul>    <li>From an Integer[] representing the hours, minutes, seconds and milliseconds</li> <li>From an Integer[] representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
+<tr class="a"><td><b>fromIntegerFieldArray</b></td><td>Function&lt;Integer[], Period&gt;</td><td>PeriodType periodType</td><td><p> It creates a Period with the specified  PeriodType either: </p> <ul>    <li>From an Integer[] representing the hours, minutes, seconds and milliseconds</li> <li>From an Integer[] representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromIntegerFieldCollection</b></td><td>Function&lt;Collection&lt;Integer&gt;, Period&gt;</td><td></td><td>A Period is created either: <ul>	   <li>From a set of  Integer representing the hours, minutes, seconds and milliseconds</li> <li>From a set of  Integer representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
-<tr class="a"><td><b>fromIntegerFieldCollection</b></td><td>Function&lt;Collection&lt;Integer&gt;, Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="b"><td><b>fromIntegerFieldCollection</b></td><td>Function&lt;Collection&lt;Integer&gt;, Period&gt;</td><td></td><td><p> It creates a Period either: </p> <ul>     <li>From a  Collection of  Integer representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  Integer representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
+<tr class="a"><td><b>fromIntegerFieldCollection</b></td><td>Function&lt;Collection&lt;Integer&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> It creates a Period with the specified  PeriodType either: </p> <ul>    <li>From a  Collection of  Integer representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  Integer representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromLong</b></td><td>Function&lt;Long, Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="a"><td><b>fromLong</b></td><td>Function&lt;Long, Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="b"><td><b>fromLong</b></td><td>Function&lt;Long, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromLong</b></td><td>Function&lt;Long, Period&gt;</td><td></td><td><p> The function receives a Long representing the  Period duration in milliseconds and creates a  Period with such duration </p></td></tr>
+<tr class="a"><td><b>fromLong</b></td><td>Function&lt;Long, Period&gt;</td><td>Chronology chronology</td><td><p> Creates a  Period with the specified  Chronology and, as the duration, the input received by this function (in milliseconds) </p></td></tr>
+<tr class="b"><td><b>fromLong</b></td><td>Function&lt;Long, Period&gt;</td><td>PeriodType periodType</td><td><p> Creates a  Period with the specified  PeriodType and, as the duration, the input received by this function (in milliseconds) </p></td></tr>
+<tr class="a"><td><b>fromLong</b></td><td>Function&lt;Long, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> Creates a  Period with the specified  PeriodType and  Chronology and, as the duration, the input received by this function (in milliseconds) </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromLongFieldArray</b></td><td>Function&lt;Long[], Period&gt;</td><td></td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
-<tr class="b"><td><b>fromLongFieldArray</b></td><td>Function&lt;Long[], Period&gt;</td><td>Chronology chronology</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
-<tr class="a"><td><b>fromLongFieldArray</b></td><td>Function&lt;Long[], Period&gt;</td><td>PeriodType periodType</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
-<tr class="b"><td><b>fromLongFieldArray</b></td><td>Function&lt;Long[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr class="b"><td><b>fromLongFieldArray</b></td><td>Function&lt;Long[], Period&gt;</td><td></td><td><p> The given  Long targets representing the time in milliseconds will be used as the start and end instants of the  Period returned  </p></td></tr>
+<tr class="a"><td><b>fromLongFieldArray</b></td><td>Function&lt;Long[], Period&gt;</td><td>Chronology chronology</td><td><p> The given  Long targets representing the time in milliseconds will be used as the start and end instants of the  Period returned  </p></td></tr>
+<tr class="b"><td><b>fromLongFieldArray</b></td><td>Function&lt;Long[], Period&gt;</td><td>PeriodType periodType</td><td><p> The given  Long targets representing the time in milliseconds will be used as the start and end instants of the  Period returned  </p></td></tr>
+<tr class="a"><td><b>fromLongFieldArray</b></td><td>Function&lt;Long[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> The given  Long targets representing the time in milliseconds will be used as the start and end instants of the  Period returned  </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromLongFieldCollection</b></td><td>Function&lt;Collection&lt;Long&gt;, Period&gt;</td><td>Chronology chronology</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
-<tr class="b"><td><b>fromLongFieldCollection</b></td><td>Function&lt;Collection&lt;Long&gt;, Period&gt;</td><td>PeriodType periodType</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
-<tr class="a"><td><b>fromLongFieldCollection</b></td><td>Function&lt;Collection&lt;Long&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td>The given long targets representing the time in milliseconds will be used as the start and end instants of the Period returned</td></tr>
+<tr class="b"><td><b>fromLongFieldCollection</b></td><td>Function&lt;Collection&lt;Long&gt;, Period&gt;</td><td></td><td><p> The given  Long targets representing the time in milliseconds will be used as the start and end instants of the  Period returned  </p></td></tr>
+<tr class="a"><td><b>fromLongFieldCollection</b></td><td>Function&lt;Collection&lt;Long&gt;, Period&gt;</td><td>Chronology chronology</td><td><p> The given  Long targets representing the time in milliseconds will be used as the start and end instants of the  Period returned  </p></td></tr>
+<tr class="b"><td><b>fromLongFieldCollection</b></td><td>Function&lt;Collection&lt;Long&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> The given  Long targets representing the time in milliseconds will be used as the start and end instants of the  Period returned  </p></td></tr>
+<tr class="a"><td><b>fromLongFieldCollection</b></td><td>Function&lt;Collection&lt;Long&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> The given  Long targets representing the time in milliseconds will be used as the start and end instants of the  Period returned  </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromStringFieldArray</b></td><td>Function&lt;String[], Period&gt;</td><td></td><td></td></tr>
-<tr class="a"><td><b>fromStringFieldArray</b></td><td>Function&lt;String[], Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="b"><td><b>fromStringFieldArray</b></td><td>Function&lt;String[], Period&gt;</td><td></td><td><p> A Period is created either: </p> <ul>    <li>From a String[] representing the hours, minutes, seconds and milliseconds</li> <li>From a String[] representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
+<tr class="a"><td><b>fromStringFieldArray</b></td><td>Function&lt;String[], Period&gt;</td><td>PeriodType periodType</td><td><p> A Period is created with the specified  PeriodType either: </p> <ul>    <li>From a String[] representing the hours, minutes, seconds and milliseconds</li> <li>From a String[] representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromStringFieldCollection</b></td><td>Function&lt;Collection&lt;String&gt;, Period&gt;</td><td></td><td>A Period is created either: <ul>	   <li>From a set of  String representing the hours, minutes, seconds and milliseconds</li> <li>From a set of  String representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
-<tr class="a"><td><b>fromStringFieldCollection</b></td><td>Function&lt;Collection&lt;String&gt;, Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
+<tr class="b"><td><b>fromStringFieldCollection</b></td><td>Function&lt;Collection&lt;String&gt;, Period&gt;</td><td></td><td><p> A Period is created either: </p> <ul>     <li>From a  Collection of  String representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  String representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
+<tr class="a"><td><b>fromStringFieldCollection</b></td><td>Function&lt;Collection&lt;String&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> A Period is created with the specified  PeriodType either: </p> <ul>    <li>From a  Collection of  String representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  String representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td></td><td></td></tr>
-<tr class="a"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="b"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="a"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td></td><td><p> The function receives an Array of two  Timestamp elements used as the start and end of the  Period it creates </p></td></tr>
+<tr class="a"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td>Chronology chronology</td><td><p> The function receives an Array of two  Timestamp elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  Chronology </p></td></tr>
+<tr class="b"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td>PeriodType periodType</td><td><p> The function receives an Array of two  Timestamp elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  PeriodType </p></td></tr>
+<tr class="a"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> The function receives an Array of two  Timestamp elements used as the start and end of the  Period it creates. The  Period will be created using the specified  specified  PeriodType and  Chronology </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromTimestampFieldCollection</b></td><td>Function&lt;Collection&lt;Timestamp&gt;, Period&gt;</td><td>Chronology chronology</td><td></td></tr>
-<tr class="a"><td><b>fromTimestampFieldCollection</b></td><td>Function&lt;Collection&lt;Timestamp&gt;, Period&gt;</td><td>PeriodType periodType</td><td></td></tr>
-<tr class="b"><td><b>fromTimestampFieldCollection</b></td><td>Function&lt;Collection&lt;Timestamp&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td></td></tr>
+<tr class="b"><td><b>fromTimestampFieldCollection</b></td><td>Function&lt;Collection&lt;Timestamp&gt;, Period&gt;</td><td></td><td><p> The function receives a  Collection of two  Timestamp elements used as the start and end of the  Period it creates </p></td></tr>
+<tr class="a"><td><b>fromTimestampFieldCollection</b></td><td>Function&lt;Collection&lt;Timestamp&gt;, Period&gt;</td><td>Chronology chronology</td><td><p> The function receives a  Collection of two  Timestamp elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  Chronology </p></td></tr>
+<tr class="b"><td><b>fromTimestampFieldCollection</b></td><td>Function&lt;Collection&lt;Timestamp&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> The function receives a  Collection of two  Timestamp elements used as the start and end of the  Period it creates. The  Period will be created using the  specified  PeriodType </p></td></tr>
+<tr class="a"><td><b>fromTimestampFieldCollection</b></td><td>Function&lt;Collection&lt;Timestamp&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> The function receives a  Collection of two  Timestamp elements used as the start and end of the  Period it creates. The  Period will be created using the specified  specified  PeriodType and  Chronology </p></td></tr>
 </tbody></table>
-
 
 
       </subsection>
@@ -100,3 +103,8 @@
     </section>
   </body>
 </document>
+
+
+
+
+
