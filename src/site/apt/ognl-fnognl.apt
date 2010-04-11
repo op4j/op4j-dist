@@ -12,46 +12,46 @@ Functions: FnOgnl
   
 +--
 List<User> users = ...;
-List<String> userNames = Op.on(users).map(FnOgnl.asString("name")).get();
+List<String> userNames = Op.on(users).map(FnOgnl.evalForString("name")).get();
 +--
 
-  The <asX(...)> methods in the <<<FnOgnl>>> class give you access to the following functions:
+  The <evalForX(...)> methods in the <<<FnOgnl>>> class give you access to the following functions:
   
 *----------------------------+-------------------------------------------------+
   <<Method>>                 | <<Returned function type>>                      |
 *----------------------------+-------------------------------------------------+
-  <<<asBigDecimal(...)>>>    | <<<Function\<Object,BigDecimal\>>>>            |
+  <<<evalForBigDecimal(...)>>>    | <<<Function\<Object,BigDecimal\>>>>            |
 *----------------------------+-------------------------------------------------+
-  <<<asBigInteger(...)>>>    | <<<Function\<Object,BigInteger\>>>>            |
+  <<<evalForBigInteger(...)>>>    | <<<Function\<Object,BigInteger\>>>>            |
 *----------------------------+-------------------------------------------------+
-  <<<asBoolean(...)>>>       | <<<Function\<Object,Boolean\>>>>               |
+  <<<evalForBoolean(...)>>>       | <<<Function\<Object,Boolean\>>>>               |
 *----------------------------+-------------------------------------------------+
-  <<<asByte(...)>>>          | <<<Function\<Object,Byte\>>>>                  |
+  <<<evalForByte(...)>>>          | <<<Function\<Object,Byte\>>>>                  |
 *----------------------------+-------------------------------------------------+
-  <<<asCalendar(...)>>>      | <<<Function\<Object,Calendar\>>>>              |
+  <<<evalForCalendar(...)>>>      | <<<Function\<Object,Calendar\>>>>              |
 *----------------------------+-------------------------------------------------+
-  <<<asCharacter(...)>>>     | <<<Function\<Object,Character\>>>>             |
+  <<<evalForCharacter(...)>>>     | <<<Function\<Object,Character\>>>>             |
 *----------------------------+-------------------------------------------------+
-  <<<asDate(...)>>>          | <<<Function\<Object,Date\>>>>                  |
+  <<<evalForDate(...)>>>          | <<<Function\<Object,Date\>>>>                  |
 *----------------------------+-------------------------------------------------+
-  <<<asDouble(...)>>>        | <<<Function\<Object,Double\>>>>                |
+  <<<evalForDouble(...)>>>        | <<<Function\<Object,Double\>>>>                |
 *----------------------------+-------------------------------------------------+
-  <<<asFloat(...)>>>         | <<<Function\<Object,Float\>>>>                 |
+  <<<evalForFloat(...)>>>         | <<<Function\<Object,Float\>>>>                 |
 *----------------------------+-------------------------------------------------+
-  <<<asInteger(...)>>>       | <<<Function\<Object,Integer\>>>>               |
+  <<<evalForInteger(...)>>>       | <<<Function\<Object,Integer\>>>>               |
 *----------------------------+-------------------------------------------------+
-  <<<asLong(...)>>>          | <<<Function\<Object,Long\>>>>                  |
+  <<<evalForLong(...)>>>          | <<<Function\<Object,Long\>>>>                  |
 *----------------------------+-------------------------------------------------+
-  <<<asObject(...)>>>        | <<<Function\<Object,Object\>>>>                |
+  <<<evalForObject(...)>>>        | <<<Function\<Object,Object\>>>>                |
 *----------------------------+-------------------------------------------------+
-  <<<asShort(...)>>>         | <<<Function\<Object,Short\>>>>                 |
+  <<<evalForShort(...)>>>         | <<<Function\<Object,Short\>>>>                 |
 *----------------------------+-------------------------------------------------+
-  <<<asString(...)>>>        | <<<Function\<Object,String\>>>>                |
+  <<<evalForString(...)>>>        | <<<Function\<Object,String\>>>>                |
 *----------------------------+-------------------------------------------------+
-  <<<asType(Type<T>,...)>>>  | <<<Function\<Object,T\>>>>                     |
+  <<<evalFor(Type<T>,...)>>>  | <<<Function\<Object,T\>>>>                     |
 *----------------------------+-------------------------------------------------+
   
-  Every <asX(...)> method can be passed parameters, and these can be accessed from the OGNL
+  Every <evalFor(...)> method can be passed parameters, and these can be accessed from the OGNL
   expression as an array called <<<#param>>>:  
 
 +--
@@ -59,7 +59,7 @@ List<User> users = ...;
 Group group = ...;
 ...
 List<User> usersInGroup = 
-    Op.on(users).removeAllFalse(FnOgnl.asBoolean("isInGroup(#param[0])", group).get();
+    Op.on(users).removeAllFalse(FnOgnl.evalForBoolean("isInGroup(#param[0])", group).get();
 +--
 
   Also the iteration index can be accessed when iterating a structure (array, list, map or set),
@@ -69,7 +69,7 @@ List<User> usersInGroup =
 List<User> users = ...;
 ...
 List<String> indexedNames = 
-    Op.on(users).forEach().exec(FnOgnl.asString("#index + '$' + #target.name")).get();
+    Op.on(users).forEach().exec(FnOgnl.evalForString("#index + '$' + #target.name")).get();
 +--
 
   <<<#target>>> is the target object itself. This expression variable is useful when the OGNL 

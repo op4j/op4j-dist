@@ -1,0 +1,53 @@
+  -------
+  Functions: Get
+  -------
+
+Functions: Get
+
+  <<<org.op4j.functions.Get>>> is a special functions class which allows the retrieval 
+  of attribute values through the execution of <getter> methods.
+
+  Here is an example: Imagine your application has a <<<User>>> class which contains a
+  <<<getName()>>> method, returning a String. Let's get the names of all the users in a list:
+  
++--
+List<User> users = ...;
+List<String> userNames = Op.on(users).map(Get.attrOfString("name")).get();
++--
+
+  The <attrOfX(...)> methods in the <<<Get>>> class return the following <functions>:
+  
+*----------------------------+-------------------------------------------------+
+  <<Method>>                 | <<Returned function type>>                      |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfBigDecimal()>>>    | <<<Function\<Object,BigDecimal\>>>>            |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfBigInteger()>>>    | <<<Function\<Object,BigInteger\>>>>            |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfBoolean()>>>       | <<<Function\<Object,Boolean\>>>>               |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfByte()>>>          | <<<Function\<Object,Byte\>>>>                  |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfCalendar()>>>      | <<<Function\<Object,Calendar\>>>>              |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfCharacter()>>>     | <<<Function\<Object,Character\>>>>             |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfDate()>>>          | <<<Function\<Object,Date\>>>>                  |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfDouble()>>>        | <<<Function\<Object,Double\>>>>                |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfFloat()>>>         | <<<Function\<Object,Float\>>>>                 |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfInteger()>>>       | <<<Function\<Object,Integer\>>>>               |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfLong()>>>          | <<<Function\<Object,Long\>>>>                  |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfObject()>>>        | <<<Function\<Object,Object\>>>>                |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfShort()>>>         | <<<Function\<Object,Short\>>>>                 |
+*----------------------------+-------------------------------------------------+
+  <<<attrOfString()>>>        | <<<Function\<Object,String\>>>>                |
+*----------------------------+-------------------------------------------------+
+  <<<attrOf(Type<T>)>>>  | <<<Function\<Object,T\>>>>                     |
+*----------------------------+-------------------------------------------------+
+  

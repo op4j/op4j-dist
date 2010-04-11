@@ -12,46 +12,46 @@ Functions: Call
   
 +--
 List<User> users = ...;
-List<String> userNames = Op.on(users).map(Call.asString("getName")).get();
+List<String> userNames = Op.on(users).map(Call.methodForString("getName")).get();
 +--
 
-  The <asX(...)> methods in the <<<Call>>> class return <<<IFunction>>> objects (this is, <functions>):
+  The <methodForX(...)> methods in the <<<Call>>> class return the following <functions>:
   
 *----------------------------+-------------------------------------------------+
   <<Method>>                 | <<Returned function type>>                      |
 *----------------------------+-------------------------------------------------+
-  <<<asBigDecimal(...)>>>    | <<<IFunction\<Object,BigDecimal\>>>>            |
+  <<<methodForBigDecimal(...)>>>    | <<<Function\<Object,BigDecimal\>>>>            |
 *----------------------------+-------------------------------------------------+
-  <<<asBigInteger(...)>>>    | <<<IFunction\<Object,BigInteger\>>>>            |
+  <<<methodForBigInteger(...)>>>    | <<<Function\<Object,BigInteger\>>>>            |
 *----------------------------+-------------------------------------------------+
-  <<<asBoolean(...)>>>       | <<<IFunction\<Object,Boolean\>>>>               |
+  <<<methodForBoolean(...)>>>       | <<<Function\<Object,Boolean\>>>>               |
 *----------------------------+-------------------------------------------------+
-  <<<asByte(...)>>>          | <<<IFunction\<Object,Byte\>>>>                  |
+  <<<methodForByte(...)>>>          | <<<Function\<Object,Byte\>>>>                  |
 *----------------------------+-------------------------------------------------+
-  <<<asCalendar(...)>>>      | <<<IFunction\<Object,Calendar\>>>>              |
+  <<<methodForCalendar(...)>>>      | <<<Function\<Object,Calendar\>>>>              |
 *----------------------------+-------------------------------------------------+
-  <<<asCharacter(...)>>>     | <<<IFunction\<Object,Character\>>>>             |
+  <<<methodForCharacter(...)>>>     | <<<Function\<Object,Character\>>>>             |
 *----------------------------+-------------------------------------------------+
-  <<<asDate(...)>>>          | <<<IFunction\<Object,Date\>>>>                  |
+  <<<methodForDate(...)>>>          | <<<Function\<Object,Date\>>>>                  |
 *----------------------------+-------------------------------------------------+
-  <<<asDouble(...)>>>        | <<<IFunction\<Object,Double\>>>>                |
+  <<<methodForDouble(...)>>>        | <<<Function\<Object,Double\>>>>                |
 *----------------------------+-------------------------------------------------+
-  <<<asFloat(...)>>>         | <<<IFunction\<Object,Float\>>>>                 |
+  <<<methodForFloat(...)>>>         | <<<Function\<Object,Float\>>>>                 |
 *----------------------------+-------------------------------------------------+
-  <<<asInteger(...)>>>       | <<<IFunction\<Object,Integer\>>>>               |
+  <<<methodForInteger(...)>>>       | <<<Function\<Object,Integer\>>>>               |
 *----------------------------+-------------------------------------------------+
-  <<<asLong(...)>>>          | <<<IFunction\<Object,Long\>>>>                  |
+  <<<methodForLong(...)>>>          | <<<Function\<Object,Long\>>>>                  |
 *----------------------------+-------------------------------------------------+
-  <<<asObject(...)>>>        | <<<IFunction\<Object,Object\>>>>                |
+  <<<methodForObject(...)>>>        | <<<Function\<Object,Object\>>>>                |
 *----------------------------+-------------------------------------------------+
-  <<<asShort(...)>>>         | <<<IFunction\<Object,Short\>>>>                 |
+  <<<methodForShort(...)>>>         | <<<Function\<Object,Short\>>>>                 |
 *----------------------------+-------------------------------------------------+
-  <<<asString(...)>>>        | <<<IFunction\<Object,String\>>>>                |
+  <<<methodForString(...)>>>        | <<<Function\<Object,String\>>>>                |
 *----------------------------+-------------------------------------------------+
-  <<<asType(Type<T>,...)>>>  | <<<IFunction\<Object,T\>>>>                     |
+  <<<methodFor(Type<T>,...)>>>  | <<<Function\<Object,T\>>>>                     |
 *----------------------------+-------------------------------------------------+
   
-  Every <asX(...)> method can be passed parameters, and these have to correspond with the 
+  Every <methodForX(...)> method can be passed parameters, and these have to correspond with the 
   parameters of the method being called.
 
 +--
@@ -59,6 +59,6 @@ List<User> users = ...;
 Group group = ...;
 ...
 List<User> usersInGroup = 
-    Op.on(users).removeAllFalse(Call.asBoolean("isInGroup", group).get();
+    Op.on(users).removeAllFalse(Call.methodForBoolean("isInGroup", group).get();
 +--
   
