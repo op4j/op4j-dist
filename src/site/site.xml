@@ -51,6 +51,7 @@
         <item name="· Functions">
           <item name="· About Functions" href="functions.html"/>
           <item name="· Call" href="call.html"/>
+          <item name="· Get" href="get.html"/>
           <item name="· FnFunc" href="fnfunc.html"/>
           <item name="· FnBoolean" href="fnboolean.html"/>
           <item name="· FnCalendar" href="fncalendar.html"/>
