@@ -26,28 +26,30 @@
 
       <subsection name="2. Functions">
 
-   
-
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
-<tr class="b"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>DateTimeFormatter formatter</td><td>It converts the given  BaseDateTime into a  String by means of the given  DateTimeFormatter</td></tr>
-<tr class="a"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>FormatType formatType<br />String format</td><td>It converts the given  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
-<tr class="b"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>FormatType formatType<br />String format<br />Locale locale</td><td>It converts the given  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
-<tr class="a"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td>It converts the given  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
-<tr class="b"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>FormatType formatType<br />String format<br />String locale</td><td>It converts the given  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+<tr class="b"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td></td><td><p> It converts the input  BaseDateTime into a  String   </p></td></tr>
+<tr class="a"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>DateTimeFormatter formatter</td><td><p> It converts the input  BaseDateTime into a  String by means of the given  DateTimeFormatter </p></td></tr>
+<tr class="b"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>FormatType formatType<br />String format</td><td><p> It converts the input  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
+<tr class="a"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>FormatType formatType<br />String format<br />Locale locale</td><td><p> It converts the input  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
+<tr class="b"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td><p> It converts the input  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
+<tr class="a"><td><b>fromBaseDateTime</b></td><td>Function&lt;BaseDateTime, String&gt;</td><td>FormatType formatType<br />String format<br />String locale</td><td><p> It converts the input  BaseDateTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>DateTimeFormatter formatter</td><td>It converts the given  LocalDate into a  String by means of the given  DateTimeFormatter</td></tr>
-<tr class="b"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>FormatType formatType<br />String format<br />Locale locale</td><td>It converts the given  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Locale</td></tr>
-<tr class="a"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td>It converts the given  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Chronology</td></tr>
-<tr class="b"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>FormatType formatType<br />String format<br />String locale</td><td>It converts the given  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Locale</td></tr>
+<tr class="b"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td></td><td><p> It converts the input  LocalDate into a  String </p></td></tr>
+<tr class="a"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>DateTimeFormatter formatter</td><td><p> It converts the input  LocalDate into a  String by means of the given  DateTimeFormatter </p></td></tr>
+<tr class="b"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>FormatType formatType<br />String format</td><td><p> It converts the input  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) </p></td></tr>
+<tr class="a"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>FormatType formatType<br />String format<br />Locale locale</td><td><p> It converts the input  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Locale </p></td></tr>
+<tr class="b"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td><p> It converts the input  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Chronology </p></td></tr>
+<tr class="a"><td><b>fromLocalDate</b></td><td>Function&lt;LocalDate, String&gt;</td><td>FormatType formatType<br />String format<br />String locale</td><td><p> It converts the input  LocalDate into a  String by means of the given pattern or style (depending on the formatType value) with the given  Locale </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>DateTimeFormatter formatter</td><td>It converts the given  LocalTime into a  String by means of the given  DateTimeFormatter</td></tr>
-<tr class="b"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format<br />Locale locale</td><td>It converts the given  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
-<tr class="a"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td>It converts the given  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
-<tr class="b"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format<br />String locale</td><td>It converts the given  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter).</td></tr>
+<tr class="b"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td></td><td><p> It converts the input  LocalTime into a  String </p></td></tr>
+<tr class="a"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>DateTimeFormatter formatter</td><td><p> It converts the input  LocalTime into a  String by means of the given  DateTimeFormatter </p></td></tr>
+<tr class="b"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format</td><td><p> It converts the input  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
+<tr class="a"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format<br />Locale locale</td><td><p> It converts the input  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
+<tr class="b"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td><p> It converts the input  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
+<tr class="a"><td><b>fromLocalTime</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format<br />String locale</td><td><p> It converts the input  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
 </tbody></table>
-
 
 
 </subsection>
@@ -55,3 +57,7 @@
     </section>
   </body>
 </document>
+
+
+
+
