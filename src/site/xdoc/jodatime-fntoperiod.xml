@@ -62,7 +62,7 @@
 <tr class="b"><td><b>fromIntegerFieldArray</b></td><td>Function&lt;Integer[], Period&gt;</td><td></td><td><p> It creates a Period either: </p> <ul>    <li>From an Integer[] representing the hours, minutes, seconds and milliseconds</li> <li>From an Integer[] representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr class="a"><td><b>fromIntegerFieldArray</b></td><td>Function&lt;Integer[], Period&gt;</td><td>PeriodType periodType</td><td><p> It creates a Period with the specified  PeriodType either: </p> <ul>    <li>From an Integer[] representing the hours, minutes, seconds and milliseconds</li> <li>From an Integer[] representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromIntegerFieldCollection</b></td><td>Function&lt;Collection&lt;Integer&gt;, Period&gt;</td><td></td><td><p> It creates a Period either: </p> <ul>     <li>From a  Collection of  Integer representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  Integer representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
+<tr class="b"><td><b>fromIntegerFieldCollection</b></td><td>Function&lt;Collection&lt;Integer&gt;, Period&gt;</td><td></td><td><p> It creates a Period either: </p> <ul>	   <li>From a  Collection of  Integer representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  Integer representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr class="a"><td><b>fromIntegerFieldCollection</b></td><td>Function&lt;Collection&lt;Integer&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> It creates a Period with the specified  PeriodType either: </p> <ul>    <li>From a  Collection of  Integer representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  Integer representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>fromLong</b></td><td>Function&lt;Long, Period&gt;</td><td></td><td><p> The function receives a Long representing the  Period duration in milliseconds and creates a  Period with such duration </p></td></tr>
@@ -83,7 +83,7 @@
 <tr class="b"><td><b>fromStringFieldArray</b></td><td>Function&lt;String[], Period&gt;</td><td></td><td><p> A Period is created either: </p> <ul>    <li>From a String[] representing the hours, minutes, seconds and milliseconds</li> <li>From a String[] representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr class="a"><td><b>fromStringFieldArray</b></td><td>Function&lt;String[], Period&gt;</td><td>PeriodType periodType</td><td><p> A Period is created with the specified  PeriodType either: </p> <ul>    <li>From a String[] representing the hours, minutes, seconds and milliseconds</li> <li>From a String[] representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>fromStringFieldCollection</b></td><td>Function&lt;Collection&lt;String&gt;, Period&gt;</td><td></td><td><p> A Period is created either: </p> <ul>     <li>From a  Collection of  String representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  String representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
+<tr class="b"><td><b>fromStringFieldCollection</b></td><td>Function&lt;Collection&lt;String&gt;, Period&gt;</td><td></td><td><p> A Period is created either: </p> <ul>	   <li>From a  Collection of  String representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  String representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr class="a"><td><b>fromStringFieldCollection</b></td><td>Function&lt;Collection&lt;String&gt;, Period&gt;</td><td>PeriodType periodType</td><td><p> A Period is created with the specified  PeriodType either: </p> <ul>    <li>From a  Collection of  String representing the hours, minutes, seconds and milliseconds</li> <li>From a  Collection of  String representing the years, months, weeks, days, hours, minutes, seconds and milliseconds</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>fromTimestampFieldArray</b></td><td>Function&lt;Timestamp[], Period&gt;</td><td></td><td><p> The function receives an Array of two  Timestamp elements used as the start and end of the  Period it creates </p></td></tr>
@@ -103,8 +103,4 @@
     </section>
   </body>
 </document>
-
-
-
-
 
