@@ -23,8 +23,9 @@ op4j: Bending the Java spoon
   greatly reduces the complexity of executing auxiliary low-level tasks in the highly bureaucratic, statically 
   -and strongly- typed language that Java is.  
   
-  But also, op4j is a huge repository of <<several hundred functions>> ready to be used
-  in your expressions. From regular expression matching on Strings to locale-savvy number conversion,
+  But also, op4j is a huge repository of <<several hundred functions>> with more than 
+  <<one thousand different parameterizations>> ready to be used in your expressions. 
+  From regular expression matching on Strings to locale-savvy number conversion,
   to easy Calendar creation. Check the <FnX function hub classes> online documentation to know more.
 
   op4j is open source, and it is distributed under the terms of the Apache License 2.0.
