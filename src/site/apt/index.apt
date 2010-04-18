@@ -138,7 +138,7 @@ Set<Calendar> set = [Calendar(12 October 1492), Calendar(6 December 1978)]
   <<Making it last: turning expressions into functions>>  
 
   And... what if we didn't really want to execute our date handling expression right there, but rather just define it
-  and <store> it somehow for later use (similar to what you'd do for a closure)? 
+  and <store> it somehow for later use (similar -just similar- to what you'd achieve with a closure)? 
   
   Well, then instead of our <<Op.on(...)>> we can create an equivalent 
   <<Fn.on(...)>> expression with exactly the same structure, and when executing <<get()>> we will 

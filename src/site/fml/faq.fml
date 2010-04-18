@@ -21,7 +21,7 @@
       </answer>
     </faq>
     
-    <faq id="what-is-relation-op4j">
+    <faq id="what-is-relation-javaruntype">
       <question>What is javaRuntype's relation to the op4j project?</question>
       <answer>
         <p>
@@ -80,9 +80,39 @@
       <question>What is op4j useful for?</question>
       <answer>
         <p>
-          op4j is mainly useful for developers. We say it is a <b>developer happiness tools</b> because
-          its aim is mainly to enable developers to create cleaner and more readable java code, especially
-          auxiliary code (data conversions, structure managing, etc).
+          op4j is mainly useful for developers. We say it is a <b>developer happiness tool</b> because
+          its aim is to enable developers to create cleaner and more readable java code, especially
+          auxiliary code (data conversions, structure managing, etc). In order to achieve this, 
+          op4j builds on the 
+          <i><a href="http://martinfowler.com/bliki/FluentInterface.html">Fluent Interface</a></i>
+          concept and also provides a huge set of predefined functions which enable developers to
+          perform everyday tasks in an elegant and simple manner.
+        </p>
+      </answer>
+    </faq>
+    
+    <faq id="will-op4j-be-obsolete">
+      <question>Will op4j be obsolete when Java 7 arrives?</question>
+      <answer>
+        <p>
+          Well, obviously if the authors believed that, we wouldn't have been working on op4j for the 
+          last couple of years ;-). The answer is <b>no</b>. 
+        </p>
+        <p>
+          We have heard this comment a couple of times, always coming from people who see op4j as a 
+          library for creating <i>closures</i>, which it is not. Function expressions are a nice 
+          feature in op4j but -besides not really being comparable to closures (just similar in concept)-
+          creating functions is not the main objective of the library (although it is a nice one).
+        </p>
+        <p>
+          op4j tries to bring Java a little bit closer to the dynamicity of other languages by 
+          enabling coding styles more similar to the <i>fluency</i> of some functional 
+          languages, something we believe will not be a Java 7 feature. As will not be the several
+          hundreds of functions for everyday tasks op4j provides out-of-the-box.
+        </p>
+        <p>
+          And even more: op4j works with Java version 1.5 or higher whereas Java 7's new features 
+          will only work with... well, Java 7 ;-)
         </p>
       </answer>
     </faq>

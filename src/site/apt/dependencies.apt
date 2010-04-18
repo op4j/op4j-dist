@@ -2,6 +2,8 @@
   op4j dependencies
   -------
 
+  op4j requires Java version 1.5 or higher.
+
 op4j dependencies on other libraries
   
   op4j depends on the following libraries:
