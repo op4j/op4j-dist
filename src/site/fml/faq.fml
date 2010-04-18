@@ -36,18 +36,6 @@
       </answer>
     </faq>
     
-    <faq id="can-it-be-considered-production-ready">
-      <question>Is it stable? Can it be considered production-ready?</question>
-      <answer>
-        <p>
-          Not until a stable version is released. op4j is currently beta software.
-        </p>
-        <p>
-          A stable version is scheduled to be released during Spring 2010.
-        </p>
-      </answer>
-    </faq>
-    
     <faq id="does-op4j-offer-commercial-support">
       <question>Does op4j offer any type of commercial support?</question>
       <answer>

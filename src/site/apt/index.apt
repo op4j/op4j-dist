@@ -2,13 +2,10 @@
   Main
   -------
 
-  <<op4j 1.0-beta3 RELEASED!>> (April 8th, 2010). <<{{{./download.html}[DOWNLOAD]}}>> <<{{{http://www.op4j.org/ChangeLog.txt}[CHANGELOG]}}>>
+  <<op4j 1.0 RELEASED!>> (April 18th, 2010). <<{{{./download.html}[DOWNLOAD]}}>>
 
-  This software is in beta stage, although fairly stable and tested already. Online
-  documentation is still work in progress. An official stable release is intended for Spring 2010.\
-  Subscribe to the 
-  {{{https://lists.sourceforge.net/lists/listinfo/op4j-announce}Announcement Mailing List}} and 
-  be the first to know! 
+  If you want to be the first to know about new versions, subscribe to the 
+  {{{https://lists.sourceforge.net/lists/listinfo/op4j-announce}Announcement Mailing List}}.
 
 op4j: Bending the Java spoon
 
