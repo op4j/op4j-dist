@@ -101,7 +101,7 @@
         <p>
           We have heard this comment a couple of times, always coming from people who see op4j as a 
           library for creating <i>closures</i>, which it is not. Function expressions are a nice 
-          feature in op4j but -besides not really being comparable to closures (just similar in concept)-
+          feature in op4j but -besides not being completely comparable to closures (just similar in concept)-
           creating functions is not the main objective of the library (although it is a nice one).
         </p>
         <p>
