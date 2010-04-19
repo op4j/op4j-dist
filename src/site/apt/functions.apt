@@ -40,19 +40,20 @@ Function<String,String> fn = FnString.toUpperCase();
 Function<String,String> fn = FnString.trim();
 Function<String,Calendar> fn = FnString.toCalendar("dd/MM/yyyy");
 Function<Number,BigDecimal> fn = FnNumber.toBigDecimal(2, RoundingMode.HALF_UP);
-Function<Iterable<Double>,Double> fn = FnMath.ofDouble().avg();
-Function<Iterable<Integer>,Integer> fn = FnMath.ofInteger().max();
+Function<Iterable<Double>,Double> fn = FnDouble().avg();
+Function<Iterable<Integer>,Integer> fn = FnInteger().max();
+Function<String[],String[]> fn = FnArray.ofString().distinct();
 +--
 
-  As we can see, some function hub classes like <<<FnMath>>> are a little bit special because they
-  require specialization (type parameterization), which is what is done with the <<<ofDouble()>>>
-  and <<<ofInteger()>>> methods.
+  As we can see, some function hub classes like <<<FnArray>>> are a little bit special because they
+  require specialization (type parameterization), which is what is done with the <<<ofString()>>> 
+  method.
   
   Let's see another example of specialization:
   
 +--
 Type<User> type = ...;
-Function<List<User[]>,List<User>>> fn = FnList.ofArrayOf(type).flattenArrays();
+Function<List<User[]>,List<User>> fn = FnList.ofArrayOf(type).flattenArrays();
 +--
 
 * User-defined functions
@@ -62,15 +63,15 @@ Function<List<User[]>,List<User>>> fn = FnList.ofArrayOf(type).flattenArrays();
   Functions can be created by means of <<<Fn.on>>> expressions:
   
 +--
-Function<String[],Calendar[]> fnParseStringDates =
-    Fn.onArrayOf(Types.STRING).map(FnString.toCalendar("dd/MM/yyyy"));
+Function<List<String>,List<Calendar>> fnParseStringDates =
+    Fn.onListOf(Types.STRING).map(FnString.toCalendar("dd/MM/yyyy")).get();
 +--
 
   As functions created with <function expressions> return <<<org.op4j.functions.Function>>> objects
   they can be easily called <even outside op4j expressions>:
 
 +--
-Calendar[] calendars = fnParseStringDates.execute(stringDates);  
+List<Calendar> calendars = fnParseStringDates.execute(stringDates);  
 +--
 
 
