@@ -76,8 +76,8 @@ List<String> upperStrs = Op.on(values).toList().map(FnString.toUpperCase()).get(
       to the defined chain.
 
 +--
-Function<String[],List<String> upperStrsFunc = 
-    Fn.onArrayOf(Types.STRING).map(FnString.toUpperCase()).get();
+Function<String[],List<String>> upperStrsFunc = 
+    Fn.onArrayOf(Types.STRING).map(FnString.toUpperCase()).toList().get();
 ...
 String[] values = ...;
 List<String> upperStrs = upperStrsFunc.execute(values);
