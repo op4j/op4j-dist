@@ -21,6 +21,15 @@
       </answer>
     </faq>
     
+    <faq id="why-do-you-pronounce-it-opah">
+      <question>Why do you pronounce it ['op-ah]?</question>
+      <answer>
+        <p>
+          Why not?   
+        </p>
+      </answer>
+    </faq>
+    
     <faq id="what-is-relation-javaruntype">
       <question>What is javaRuntype's relation to the op4j project?</question>
       <answer>
