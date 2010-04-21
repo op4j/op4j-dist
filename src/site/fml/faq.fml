@@ -30,6 +30,34 @@
       </answer>
     </faq>
     
+    <faq id="why-bending-the-java-spoon">
+      <question>Bending the Java spoon? Is this a kind of magic?</question>
+      <answer>
+        <p>
+          Yes, it's a kind of magic ;-).   
+        </p>
+        <p>
+          The biggest problem for op4j is, strange as it seems, Java. During the long and 
+          painful development of the op4j concept, the authors felt they were achieving things that
+          Java was simply not designed for. Java is terrific and we love it, but it is a highly 
+          bureaucratic language, strongly and statically typed, and it has been patched several 
+          times over the years in order to acquire some modern features with the requirement
+          of not leaving legacy code behind -which has lead to some terrifying creatures like the
+          current <i>Generics</i> implementation-. In this scenario, trying to bring to Java 
+          features (or more accurately, coding styles) which belonged more in the functional 
+          and dynamic programming worlds was really difficult.
+        </p>
+        <p>
+          This is why, realising that they were curling and twisting the language, pushing it
+          to its limits and extracting every drop of juice it had to give, the authors felt 
+          like being bending the Java spoon. And that is what op4j is about.
+        </p>
+        <p>
+          But it was worth it, wasn't it?
+        </p>
+      </answer>
+    </faq>
+    
     <faq id="what-is-relation-javaruntype">
       <question>What is javaRuntype's relation to the op4j project?</question>
       <answer>
@@ -96,6 +124,20 @@
           <i><a href="http://martinfowler.com/bliki/FluentInterface.html">Fluent Interface</a></i>
           concept and also provides a huge set of predefined functions which enable developers to
           perform everyday tasks in an elegant and simple manner.
+        </p>
+      </answer>
+    </faq>
+    
+    <faq id="where-can-I-find-examples">
+      <question>Despite having read all your documentation, I still cannot imagine what is this thing useful for. Where could I find some usage examples?</question>
+      <answer>
+        <p>
+          First of all, congratulations on having read all the docs, you are really brave ;-). 
+        </p>
+        <p>
+          The op4j authors maintain a blog with <i>example recipes</i> which can show you some practical
+          examples and give you ideas for using op4j. It is called <b>Bending the Java spoon</b> and
+          it can be reached at <a href="http://www.bendingthejavaspoon.com">http://www.bendingthejavaspoon.com</a>.  
         </p>
       </answer>
     </faq>
