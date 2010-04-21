@@ -50,7 +50,8 @@
         <p>
           This is why, realising that they were curling and twisting the language, pushing it
           to its limits and extracting every drop of juice it had to give, the authors felt 
-          like being bending the Java spoon. And that is what op4j is about.
+          like being bending the Java spoon. And that is what the +40K lines of code in 
+          op4j are about.
         </p>
         <p>
           But it was worth it, wasn't it?
@@ -164,6 +165,24 @@
         <p>
           And even more: op4j works with Java version 1.5 or higher whereas Java 7's new features 
           will only work with... well, Java 7 ;-)
+        </p>
+      </answer>
+    </faq>
+    
+    <faq id="can-I-use-only-functions">
+      <question>I'm not interested in your fancy-styled chained operators, but I love some functions here. Can I still use op4j?</question>
+      <answer>
+        <p>
+          Absolutely! We understand that chained operation expressions are the trendiest and
+          most <i>modern</i> feature in op4j (in the authors' opinion), but in fact that is just one of the
+          two big features in op4j. The other one is, of course, <b>functions</b>. op4j includes several
+          hundred powerful functions which can be used directly without ever creating any kind
+          of chained expression, and we'd love you to use them that way, if that is what you prefer. 
+        </p>
+        <p>
+          Just have a look at, for example, the amazing functions in 
+          <a href="http://www.op4j.org/fnstring.html"><tt>FnString</tt></a>. Great time-saving functions, 
+          ready to be used!
         </p>
       </answer>
     </faq>
