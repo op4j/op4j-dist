@@ -63,7 +63,7 @@
       <question>What is javaRuntype's relation to the op4j project?</question>
       <answer>
         <p>
-          javaRuntype was conceived at first as a part of the op4j project [<a href="http://www.op4j.org">http://www.op4j.org</a>],
+          javaRuntype [<a href="http://www.javaruntype.org">http://www.javaruntype.org</a>] was conceived at first as a part of the op4j project,
           and by the same person who created op4j itself, but later during op4j's development it was decided that javaRuntype should be a project
           of its own as its range of application by separate was in fact quite broad.
         </p>
