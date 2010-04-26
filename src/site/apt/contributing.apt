@@ -25,8 +25,9 @@ Contributing to op4j: Terms
       []
 
     * All your code should follow the Java Code Conventions. The only 
-      exception for this is that column limit is 120 instead of the usual 
-      80 characters (this is a matter of convenience). 
+      exception for this is that column limit is not the usual 
+      80 characters (this is a matter of convenience -just don't make them 200 characters
+      long and it will be OK). 
       
       []
       
@@ -34,14 +35,15 @@ Contributing to op4j: Terms
       
       []
       
-    * All your code should compile and run in Java 1.4, and it should be 
+    * All your code should compile and run in Java 1.5, and it should be 
       easy to read and understand by a human.
       
       []
 
-    * All public methods and classes should have comprehensive javadoc, and 
+    * All public methods and classes directly available to the op4j users
+      should have comprehensive javadoc (e.g: functions, operators), and 
       code should have a reasonable amount of comments in it (when needed, 
-      of course, not just comment for comment).
+      of course, not just comment for the sake of comment).
       
       []
       
@@ -79,11 +81,11 @@ Contributing to op4j: Terms
       []
 
     * And importantly: You will have to take the required measures, under your 
-      entire responsibility, to <<ensure that the company/ies you work for will 
-      never claim any rights over your contributed code>>, and that all the code 
+      entire responsibility, to <<ensure that neither you nor the company/ies you work for will 
+      ever claim any rights over your contributed code>>, and that all the code 
       you contribute is original and will rise no claims over its intellectual 
       property by any third persons or companies. Also, you agree to contribute 
-      your code or documentation <<for free and under the terms established by the 
+      your code or documentation <<completely for free and under the terms established by the 
       Apache License 2.0 in a time-unlimited basis>>.
 
 
