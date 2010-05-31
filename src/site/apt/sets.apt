@@ -445,7 +445,7 @@ Op.on(set).map(function).get();
 Op.on(set).forEach().exec(function).endFor().get();
 +-- 
 
-For example:
+  For example:
 
 +--
 Set<String> set = ...;

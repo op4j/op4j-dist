@@ -452,7 +452,7 @@ Op.on(list).map(function).get();
 Op.on(list).forEach().exec(function).endFor().get();
 +-- 
 
-For example:
+  For example:
 
 +--
 List<String> list = ...;
