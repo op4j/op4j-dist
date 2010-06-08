@@ -1,0 +1,78 @@
+<!DOCTYPE document PUBLIC
+  "-//Apache Software Foundation//DTD XDOC 1.0//EN"
+  "http://maven.apache.org/dtd/xdoc_1_0.dtd">
+
+
+<document>
+  <properties>
+    <title>Functions: FnDateTime</title>    
+  </properties>
+  <body>
+  
+    <section name="Functions: FnDateTime">
+
+      
+
+      <subsection name="1. Overview">
+
+        <p>
+            <b><a href="http://www.op4j.org/apidocs/op4j-jodatime/org/op4j/jodatime/functions/FnDateTime.html">FnDateTime</a></b> is a <em>function hub class</em>
+            containing a lot of static methods to convert from various input objects to DateTime. Those static methods return functions whose 
+            output is DateTime and whose input can be Calendar, Date, Integer list and Long among others.             
+        </p>
+        
+      </subsection>
+
+      <subsection name="2. Functions">
+
+
+
+<table border="0">
+<thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
+<tbody>
+<tr class="b"><td><b>calendarToDateTime</b></td><td>Function&lt;T, DateTime&gt;</td><td></td><td><p> It converts a  Calendar into a  DateTime </p></td></tr>
+<tr class="a"><td><b>calendarToDateTime</b></td><td>Function&lt;T, DateTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> It converts a  Calendar into a  DateTime in the given  DateTimeZone </p></td></tr>
+<tr class="b"><td><b>calendarToDateTime</b></td><td>Function&lt;T, DateTime&gt;</td><td>Chronology chronology</td><td><p> It converts a  Calendar into a  DateTime with the given  Chronology </p></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>dateToDateTime</b></td><td>Function&lt;T, DateTime&gt;</td><td></td><td><p> The input  Date is converted into a  DateTime </p></td></tr>
+<tr class="b"><td><b>dateToDateTime</b></td><td>Function&lt;T, DateTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The input  Date is converted into a  DateTime configured with the given  DateTimeZone </p></td></tr>
+<tr class="a"><td><b>dateToDateTime</b></td><td>Function&lt;T, DateTime&gt;</td><td>Chronology chronology</td><td><p> The input  Date is converted into a  DateTime with the given  Chronology </p></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>integerFieldArrayToDateTime</b></td><td>Function&lt;Integer[], DateTime&gt;</td><td></td><td><p> A  DateTime is created from the given  Integer array. </p>  <p> The valid input Integer[] are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
+<tr class="a"><td><b>integerFieldArrayToDateTime</b></td><td>Function&lt;Integer[], DateTime&gt;</td><td>Chronology chronology</td><td><p> A  DateTime is created from the given  Integer array. The result will be created with the given  Chronology </p>  <p> The valid input Integer[] are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>integerFieldCollectionToDateTime</b></td><td>Function&lt;Collection&lt;Integer&gt;, DateTime&gt;</td><td></td><td><p> A  DateTime is created from the input  Integer  Collection. </p>  <p> The valid input Collection&lt;Integer&gt; are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
+<tr class="a"><td><b>integerFieldCollectionToDateTime</b></td><td>Function&lt;Collection&lt;Integer&gt;, DateTime&gt;</td><td>Chronology chronology</td><td><p> A  DateTime is created from the input  Integer  Collection. The result will be created with the given  Chronology </p>  <p> The valid input Collection&lt;Integer&gt; are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>longToDateTime</b></td><td>Function&lt;Long, DateTime&gt;</td><td></td><td><p> The input  Long representing the time in milliseconds is converted into a  DateTime </p></td></tr>
+<tr class="a"><td><b>longToDateTime</b></td><td>Function&lt;Long, DateTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The input  Long representing the time in milliseconds is converted into a  DateTime in the given  DateTimeZone </p></td></tr>
+<tr class="b"><td><b>longToDateTime</b></td><td>Function&lt;Long, DateTime&gt;</td><td>Chronology chronology</td><td><p> The input  Long representing the time in milliseconds is converted into a  DateTime with the given  Chronology </p></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>strFieldArrayToDateTime</b></td><td>Function&lt;String[], DateTime&gt;</td><td></td><td><p> A  DateTime is created from the given  String array. </p>  <p> The valid input String[] are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
+<tr class="b"><td><b>strFieldArrayToDateTime</b></td><td>Function&lt;String[], DateTime&gt;</td><td>Chronology chronology</td><td><p> A  DateTime is created from the given  String array. The result will be created with the given  Chronology </p>  <p> The valid input String[] are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>strFieldCollectionToDateTime</b></td><td>Function&lt;Collection&lt;String&gt;, DateTime&gt;</td><td></td><td><p> A  DateTime is created from the given  String  Collection. </p>  <p> The valid input Collection&lt;String&gt; are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
+<tr class="b"><td><b>strFieldCollectionToDateTime</b></td><td>Function&lt;Collection&lt;String&gt;, DateTime&gt;</td><td>Chronology chronology</td><td><p> A  DateTime is created from the given  String  Collection. The result will be created with the given  Chronology </p>  <p> The valid input Collection&lt;String&gt; are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern</td><td><p> It converts the input  String into a  DateTime using the  given pattern parameter. If the pattern includes either, the name of  the month or day of week, a conversion accepting a  Locale must  be used instead  </p></td></tr>
+<tr class="b"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern<br />DateTimeZone dateTimeZone</td><td><p> It converts the input  String into a  DateTime using the given pattern parameter and with the given  DateTimeZone. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead </p></td></tr>
+<tr class="a"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern<br />Chronology chronology</td><td><p> It converts the input  String into a  DateTime using the given pattern parameter and with the given  Chronology. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead </p></td></tr>
+<tr class="b"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern<br />Locale locale</td><td><p> It converts the input  String into a  DateTime using the given pattern and  Locale parameters </p></td></tr>
+<tr class="a"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern<br />String locale</td><td><p> It converts the given  String into a  DateTime using the given pattern and  Locale parameters </p></td></tr>
+<tr class="b"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern<br />Locale locale<br />DateTimeZone dateTimeZone</td><td><p> It converts the given String into a  DateTime using the given pattern and  Locale parameters. The  DateTime is configured with the given  DateTimeZone </p></td></tr>
+<tr class="a"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern<br />String locale<br />DateTimeZone dateTimeZone</td><td><p> It converts the given  String into a  DateTime using the given pattern and  Locale parameters. The  DateTime is configured with the given  DateTimeZone </p></td></tr>
+<tr class="b"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern<br />Locale locale<br />Chronology chronology</td><td><p> It converts the input  String into a  DateTime using the given pattern and  Locale parameters. The  DateTime will be created with the given  Chronology </p></td></tr>
+<tr class="a"><td><b>strToDateTime</b></td><td>Function&lt;String, DateTime&gt;</td><td>String pattern<br />String locale<br />Chronology chronology</td><td><p> It converts the input  String into a  DateTime using the given pattern and  Locale parameters. The  DateTime will be created with the given  Chronology </p></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>timestampToDateTime</b></td><td>Function&lt;Timestamp, DateTime&gt;</td><td></td><td><p> The input  Timestamp is converted into a  DateTime </p></td></tr>
+<tr class="a"><td><b>timestampToDateTime</b></td><td>Function&lt;Timestamp, DateTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The input  Timestamp is converted into a  DateTime in the given  DateTimeZone </p></td></tr>
+<tr class="b"><td><b>timestampToDateTime</b></td><td>Function&lt;Timestamp, DateTime&gt;</td><td>Chronology chronology</td><td><p> The input  Timestamp is converted into a  DateTime with the given  Chronology </p></td></tr>
+</tbody></table>
+
+
+      </subsection>
+      
+    </section>
+  </body>
+</document>
+
