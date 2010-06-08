@@ -30,19 +30,21 @@ JodaTime Extension
   The extension comprises the following <function hub class>:
   
      
-    * {{{./jodatime-fnjodatostring.html}FnJodaToString}}:  
+    * {{{./jodatime-fnjodastring.html}FnJodaString}}: contains functions related to the conversion from several input types into String
 
-    * {{{./jodatime-fntodatemidnight.html}FnToDateMidnight}}: 
+    * {{{./jodatime-fndatemidnight.html}FnDateMidnight}}: functions related to the conversion into DateMidnight
     
-    * {{{./jodatime-fntodatetime.html}FnToDateTime}}: 
+    * {{{./jodatime-fndatetime.html}FnDateTime}}: functions related to the conversion to FnDateTime
     
-    * {{{./jodatime-fntointerval.html}FnToInterval}}: 
+    * {{{./jodatime-fnmutabledatetime.html}FnMutableDateTime}}: functions returning a MutableDateTime as its output
     
-    * {{{./jodatime-fntolocaldate}FnToLocalDate}}: 
+    * {{{./jodatime-fninterval.html}FnInterval}}: contains functions returning an Interval as its output
     
-    * {{{./jodatime-fntolocaltime}FnToLocalTime}}: 
+    * {{{./jodatime-fnlocaldate}FnLocalDate}}: deals with the conversion from several input types into LocalDate
     
-    * {{{./jodatime-fntoperiod}FnToPeriod}}: 
+    * {{{./jodatime-fnlocaltime}FnLocalTime}}: its functions generate a LocalTime as its output
+    
+    * {{{./jodatime-fnperiod}FnPeriod}}: contains a set of functions whose output is Period
 
     * FnJodaTimeUtils: is a shortcut to all of the methods included
     in the classes above. This way, 
@@ -52,12 +54,12 @@ JodaTime Extension
 +--
 List<DateTime> targets = new ArrayList<DateTime>();
 targets.add(new DateTime());
-List<String> result1 = Op.onList(targets).forEach().exec(FnJodaToString.fromBaseDateTime(FormatType.PATTERN, 
+List<String> result1 = Op.onList(targets).forEach().exec(FnJodaString.baseDateTimeToStr(FormatType.PATTERN, 
   "yyyy-MM-DD_HH:mm:ss:SS")).get();
   
 String pattern = "dd/mm/yyyy-HH:mm";
 String asStr = "24/12/2000-15:03";
-DateMidnight result2 = Op.on(asStr).exec(FnToDateMidnight.fromString(pattern)).get();
+DateMidnight result2 = Op.on(asStr).exec(FnDateMidnight.strToDateMidnight(pattern)).get();
 +--
 
   is equivalent to
@@ -79,19 +81,21 @@ DateMidnight result2 = Op.on(asStr).exec(FnJodaTimeUtils.strToDateMidnight(patte
   This section includes some examples of the use of the classes listed above. To learn about the methods available,
   visit the pages:
   
-    * {{{./jodatime-fnjodatostring.html}FnJodaToString}}  
+    * {{{./jodatime-fnjodastring.html}FnJodaString}}  
 
-    * {{{./jodatime-fntodatemidnight.html}FnToDateMidnight}} 
+    * {{{./jodatime-fndatemidnight.html}FnDateMidnight}} 
     
-    * {{{./jodatime-fntodatetime.html}FnToDateTime}} 
+    * {{{./jodatime-fndatetime.html}FnDateTime}} 
     
-    * {{{./jodatime-fntointerval.html}FnToInterval}} 
+    * {{{./jodatime-fnmutabledatetime.html}FnMutableDateTime}} 
     
-    * {{{./jodatime-fntolocaldate}FnToLocalDate}} 
+    * {{{./jodatime-fninterval.html}FnInterval}} 
     
-    * {{{./jodatime-fntolocaltime}FnToLocalTime}} 
+    * {{{./jodatime-fnlocaldate.html}FnLocalDate}} 
     
-    * {{{./jodatime-fntoperiod}FnToPeriod}} 
+    * {{{./jodatime-fnlocaltime.html}FnLocalTime}} 
+    
+    * {{{./jodatime-fnperiod.html}FnPeriod}} 
     
     []
   
@@ -99,33 +103,33 @@ DateMidnight result2 = Op.on(asStr).exec(FnJodaTimeUtils.strToDateMidnight(patte
 
 List<DateMidnight> targets = new ArrayList<DateMidnight>();
 targets.add(new DateMidnight());
-List<String> result = Op.onList(targets).forEach().exec(FnJodaToString
-  .fromBaseDateTime(FormatType.STYLE, "MM", Locale.UK.toString())).get(); 
+List<String> result = Op.onList(targets).forEach().exec(FnJodaString
+  .baseDateTimeToStr(FormatType.STYLE, "MM", Locale.UK.toString())).get(); 
     
 /* *** */
     
 Timestamp timestamp = new Timestamp(new Date().getTime());
-LocalTime result = Op.on(timestamp).exec(FnToLocalTime.fromTimestamp(
+LocalTime result = Op.on(timestamp).exec(FnLocalTime.timestampToLocalTime(
   DateTimeZone.getDefault())).get();
     
 /* *** */
 
 Interval result = Op.on(Arrays.asList("1977", "5", "2", "23", "12", "2", "34",
   "1980", "8", "5", "12", "12", "12", "4"))
-  .exec(FnToInterval.fromStringFieldCollection(DateTimeZone.getDefault()))
+  .exec(FnInterval.strFieldCollectionToInterval(DateTimeZone.getDefault()))
   .get();
 
 /* *** */
      
 Interval result = Op.on(Arrays.asList("2000/02/09", "2001/09/05"))
-  .exec(FnToInterval.fromStringFieldCollection("yyyy/mm/dd", DateTimeZone.getDefault())).get();
+  .exec(FnInterval.strFieldCollectionToInterval("yyyy/mm/dd", DateTimeZone.getDefault())).get();
 
 /* *** */
  
 Long start = Long.valueOf(1000);
 Long end = Long.valueOf(1000000);    
 Interval result = Op.on(new Long[] {start, end})
-  .exec(FnToInterval.fromLongFieldArray(GJChronology.getInstance()))
+  .exec(FnInterval.longFieldArrayToInterval(GJChronology.getInstance()))
   .get();
 +--
   
