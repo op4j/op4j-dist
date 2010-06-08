@@ -1,0 +1,75 @@
+<!DOCTYPE document PUBLIC
+  "-//Apache Software Foundation//DTD XDOC 1.0//EN"
+  "http://maven.apache.org/dtd/xdoc_1_0.dtd">
+
+
+<document>
+  <properties>
+    <title>Functions: FnLocalTime</title>    
+  </properties>
+  <body>
+  
+    <section name="Functions: FnLocalTime">
+
+      
+
+      <subsection name="1. Overview">
+
+        <p>
+            <b><a href="http://www.op4j.org/apidocs/op4j-jodatime/org/op4j/jodatime/functions/FnLocalTime.html">FnLocalTime</a></b> is a <em>function hub class</em>
+            containing a lot of static methods to convert from various input objects to LocalTime. Those static methods return functions whose 
+            output is LocalTime and whose input can be Calendar, Date, Integer list and Timestamp among others.             
+        </p>
+        
+      </subsection>
+
+      <subsection name="2. Functions">
+
+<table border="0">
+<thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
+<tbody>
+<tr class="b"><td><b>calendarToLocalTime</b></td><td>Function&lt;T, LocalTime&gt;</td><td></td><td><p> It converts a  Calendar into a  LocalTime </p></td></tr>
+<tr class="a"><td><b>calendarToLocalTime</b></td><td>Function&lt;T, LocalTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> It converts a  Calendar into a  LocalTime in the given  DateTimeZone </p></td></tr>
+<tr class="b"><td><b>calendarToLocalTime</b></td><td>Function&lt;T, LocalTime&gt;</td><td>Chronology chronology</td><td><p> It converts a  Calendar into a  LocalTime with the given  Chronology </p></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>dateToLocalTime</b></td><td>Function&lt;T, LocalTime&gt;</td><td></td><td><p> The given  Date is converted into a  LocalTime </p></td></tr>
+<tr class="b"><td><b>dateToLocalTime</b></td><td>Function&lt;T, LocalTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The given  Date is converted into a  LocalTime configured with the given  DateTimeZone </p></td></tr>
+<tr class="a"><td><b>dateToLocalTime</b></td><td>Function&lt;T, LocalTime&gt;</td><td>Chronology chronology</td><td><p> The given  Date is converted into a  LocalTime with the given  Chronology </p></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>integerFieldArrayToLocalTime</b></td><td>Function&lt;Integer[], LocalTime&gt;</td><td></td><td><p> A  LocalTime is created from the given  Integer Array. </p>  <p> The valid input Integer[] represent: </p> <ul> <li>hour (minute, second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute (second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second (millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second, millisecond</li> </ul></td></tr>
+<tr class="a"><td><b>integerFieldArrayToLocalTime</b></td><td>Function&lt;Integer[], LocalTime&gt;</td><td>Chronology chronology</td><td><p> A  LocalTime is created from the given  Integer array with the specified  Chronology. </p>  <p> The valid input Integer[] represent: </p> <ul> <li>hour (minute, second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute (second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second (millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second, millisecond</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>integerFieldCollectionToLocalTime</b></td><td>Function&lt;Collection&lt;Integer&gt;, LocalTime&gt;</td><td></td><td><p> A  LocalTime is created from the given  Integer  Collection. </p>  <p> The valid input Collection&lt;Integer&gt; represent: </p> <ul> <li>hour (minute, second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute (second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second (millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second, millisecond</li> </ul></td></tr>
+<tr class="a"><td><b>integerFieldCollectionToLocalTime</b></td><td>Function&lt;Collection&lt;Integer&gt;, LocalTime&gt;</td><td>Chronology chronology</td><td><p> A  LocalTime is created from the given  Integer  Collection with the specified  Chronology. </p>  <p> The valid input Collection&lt;Integer&gt; represent: </p> <ul> <li>hour (minute, second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute (second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second (millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second, millisecond</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>longToLocalTime</b></td><td>Function&lt;Long, LocalTime&gt;</td><td></td><td><p> The given long representing the time in milliseconds is converted into a  LocalTime </p></td></tr>
+<tr class="a"><td><b>longToLocalTime</b></td><td>Function&lt;Long, LocalTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The given long representing the time in milliseconds is converted into a  LocalTime in the given  DateTimeZone </p></td></tr>
+<tr class="b"><td><b>longToLocalTime</b></td><td>Function&lt;Long, LocalTime&gt;</td><td>Chronology chronology</td><td><p> The given long representing the time in milliseconds is converted into a  LocalTime with the given  Chronology </p></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>strFieldArrayToLocalTime</b></td><td>Function&lt;String[], LocalTime&gt;</td><td></td><td><p> A  LocalTime is created from the given  String array. </p>  <p> The valid input String[] represent: </p> <ul> <li>hour (minute, second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute (second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second (millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second, millisecond</li> </ul></td></tr>
+<tr class="b"><td><b>strFieldArrayToLocalTime</b></td><td>Function&lt;String[], LocalTime&gt;</td><td>Chronology chronology</td><td><p> A  LocalTime is created from the given  String array with the specified  Chronology </p>  <p> The valid input String[] represent: </p> <ul> <li>hour (minute, second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute (second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second (millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second, millisecond</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>strFieldCollectionToLocalTime</b></td><td>Function&lt;Collection&lt;String&gt;, LocalTime&gt;</td><td></td><td><p> A  LocalTime is created from the given  String  Collection. </p>  <p> The valid input Collection&lt;String&gt; represent: </p> <ul> <li>hour (minute, second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute (second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second (millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second, millisecond</li> </ul></td></tr>
+<tr class="b"><td><b>strFieldCollectionToLocalTime</b></td><td>Function&lt;Collection&lt;String&gt;, LocalTime&gt;</td><td>Chronology chronology</td><td><p> A  LocalTime is created from the given  String  Collection with the specified  Chronology </p>  <p> The valid input Collection&lt;String&gt; represent: </p> <ul> <li>hour (minute, second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute (second and millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second (millisecond will be set to 0 in the output  LocalTime)</li> <li>hour, minute, second, millisecond</li> </ul></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern</td><td><p> It converts the given  String into a  LocalTime using the given pattern parameter. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead </p></td></tr>
+<tr class="b"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern<br />DateTimeZone dateTimeZone</td><td><p> It converts the given String into a  LocalTime using the given pattern parameter and with the specified  DateTimeZone. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead </p></td></tr>
+<tr class="a"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern<br />Chronology chronology</td><td><p> It converts the given  String into a  LocalTime using the given pattern parameter with the specified  Chronology. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead </p></td></tr>
+<tr class="b"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern<br />Locale locale</td><td><p> It converts the given  String into a  LocalTime using the given pattern and  Locale parameters </p></td></tr>
+<tr class="a"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern<br />String locale</td><td><p> It converts the given  String into a  LocalTime using the given pattern and  Locale parameters </p></td></tr>
+<tr class="b"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern<br />Locale locale<br />DateTimeZone dateTimeZone</td><td><p> It converts the given  String into a  LocalTime using the given pattern and  Locale parameters. The  DateTime is configured with the given  DateTimeZone </p></td></tr>
+<tr class="a"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern<br />String locale<br />DateTimeZone dateTimeZone</td><td><p> It converts the given  String into a  LocalTime using the given pattern and  Locale parameters. The  DateTime is configured with the given  DateTimeZone </p></td></tr>
+<tr class="b"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern<br />Locale locale<br />Chronology chronology</td><td><p> It converts the given  String into a  LocalTime using the given pattern and  Locale parameters. The  DateTime will be created with the specified  Chronology </p></td></tr>
+<tr class="a"><td><b>strToLocalTime</b></td><td>Function&lt;String, LocalTime&gt;</td><td>String pattern<br />String locale<br />Chronology chronology</td><td><p> It converts the given  String into a  LocalTime using the given pattern and  Locale parameters. The  DateTime will be created with the specified  Chronology </p></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="b"><td><b>timestampToLocalTime</b></td><td>Function&lt;Timestamp, LocalTime&gt;</td><td></td><td><p> The given  Timestamp is converted into a  LocalTime </p></td></tr>
+<tr class="a"><td><b>timestampToLocalTime</b></td><td>Function&lt;Timestamp, LocalTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The given  Timestamp is converted into a  LocalTime in the given  DateTimeZone </p></td></tr>
+<tr class="b"><td><b>timestampToLocalTime</b></td><td>Function&lt;Timestamp, LocalTime&gt;</td><td>Chronology chronology</td><td><p> The given  Timestamp is converted into a  LocalTime with the given  Chronology </p></td></tr>
+</tbody></table>
+
+
+</subsection>
+      
+    </section>
+  </body>
+</document>
