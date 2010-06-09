@@ -44,7 +44,7 @@
 <tr class="a"><td><b>integerFieldCollectionToMutableDateTime</b></td><td>Function&lt;Collection&lt;Integer&gt;, MutableDateTime&gt;</td><td>Chronology chronology</td><td><p> A  MutableDateTime is created from the input  Integer  Collection. The result will be created with the given  Chronology </p>  <p> The valid input Collection&lt;Integer&gt; are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>longToMutableDateTime</b></td><td>Function&lt;Long, MutableDateTime&gt;</td><td></td><td><p> The input  Long representing the time in milliseconds is converted into a  MutableDateTime </p></td></tr>
-<tr class="a"><td><b>longToMutableDateTime</b></td><td>Function&lt;Long, MutableDateTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The input  Long representing the time in milliseconds is converted into a  MutableDateTime in the given  MutableDateTimeZone </p></td></tr>
+<tr class="a"><td><b>longToMutableDateTime</b></td><td>Function&lt;Long, MutableDateTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The input  Long representing the time in milliseconds is converted into a  MutableDateTime in the given  DateTimeZone </p></td></tr>
 <tr class="b"><td><b>longToMutableDateTime</b></td><td>Function&lt;Long, MutableDateTime&gt;</td><td>Chronology chronology</td><td><p> The input  Long representing the time in milliseconds is converted into a  MutableDateTime with the given  Chronology </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>strFieldArrayToMutableDateTime</b></td><td>Function&lt;String[], MutableDateTime&gt;</td><td></td><td><p> A  MutableDateTime is created from the given  String array. </p>  <p> The valid input String[] are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
@@ -54,7 +54,7 @@
 <tr class="b"><td><b>strFieldCollectionToMutableDateTime</b></td><td>Function&lt;Collection&lt;String&gt;, MutableDateTime&gt;</td><td>Chronology chronology</td><td><p> A  MutableDateTime is created from the given  String  Collection. The result will be created with the given  Chronology </p>  <p> The valid input Collection&lt;String&gt; are: </p> <ul> <li>year (month and day will be set to 1)</li> <li>year, month (day will be set to 1)</li> <li>year, month, day</li> </ul></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>strToMutableDateTime</b></td><td>Function&lt;String, MutableDateTime&gt;</td><td>String pattern</td><td><p> It converts the input  String into a  MutableDateTime using the  given pattern parameter. If the pattern includes either, the name of  the month or day of week, a conversion accepting a  Locale must  be used instead  </p></td></tr>
-<tr class="b"><td><b>strToMutableDateTime</b></td><td>Function&lt;String, MutableDateTime&gt;</td><td>String pattern<br />DateTimeZone dateTimeZone</td><td><p> It converts the input  String into a  MutableDateTime using the given pattern parameter and with the given  MutableDateTimeZone. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead </p></td></tr>
+<tr class="b"><td><b>strToMutableDateTime</b></td><td>Function&lt;String, MutableDateTime&gt;</td><td>String pattern<br />DateTimeZone dateTimeZone</td><td><p> It converts the input  String into a  MutableDateTime using the given pattern parameter and with the given  DateTimeZone. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead </p></td></tr>
 <tr class="a"><td><b>strToMutableDateTime</b></td><td>Function&lt;String, MutableDateTime&gt;</td><td>String pattern<br />Chronology chronology</td><td><p> It converts the input  String into a  MutableDateTime using the given pattern parameter and with the given  Chronology. If the pattern includes either, the name of the month or day of week, a conversion accepting a  Locale must be used instead </p></td></tr>
 <tr class="b"><td><b>strToMutableDateTime</b></td><td>Function&lt;String, MutableDateTime&gt;</td><td>String pattern<br />Locale locale</td><td><p> It converts the input  String into a  MutableDateTime using the given pattern and  Locale parameters </p></td></tr>
 <tr class="a"><td><b>strToMutableDateTime</b></td><td>Function&lt;String, MutableDateTime&gt;</td><td>String pattern<br />String locale</td><td><p> It converts the given  String into a  MutableDateTime using the given pattern and  Locale parameters </p></td></tr>
@@ -69,9 +69,9 @@
 </tbody></table>
 
 
-
 </subsection>
       
     </section>
   </body>
 </document>
+
