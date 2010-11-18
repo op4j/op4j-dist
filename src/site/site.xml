@@ -66,6 +66,7 @@
             <item name="· FnLong" href="fnlong.html"/>
             <item name="· FnFloat" href="fnfloat.html"/>
             <item name="· FnDouble" href="fndouble.html"/>
+            <item name="· FnShort" href="fndouble.html"/>
           </item>
           <item name="· Structures">
             <item name="· FnArray" href="fnarray.html"/>
