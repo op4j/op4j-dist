@@ -73,6 +73,8 @@ Op.onMapFor(Integer.valueOf(0), "all").put(Integer.valueOf(1), "first")
         <div>
         <!-- Table with functions -->
 
+
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -116,14 +118,20 @@ Op.onMapFor(Integer.valueOf(0), "all").put(Integer.valueOf(1), "first")
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>sortBy</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super Map.Entry&lt;K,V&gt;, ?&gt; by</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>sortEntries</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>Comparator&lt;? super Entry&lt;K,V&gt;&gt; comparator</td><td></td></tr>
-</tbody></table>        
-        <!--  -->
-        </div>
-      
-      </subsection>
+<tr class="b"><td><b>sortByKey</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td></td><td></td></tr>
+<tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
+<tr class="a"><td><b>sortEntries</b></td><td>Function&lt;Map&lt;K,V&gt;,Map&lt;K,V&gt;&gt;</td><td>Comparator&lt;? super Entry&lt;K,V&gt;&gt; comparator</td><td></td></tr>
+</tbody></table>
 
-    </section>
+</div>
+
+</subsection>
+
+</section>
+
 </body>
+
 </document>
+
+
 
