@@ -27,6 +27,7 @@
       <subsection name="2. Functions">
 
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -51,8 +52,6 @@
 <tr class="b"><td><b>localTimeToStr</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format<br />Chronology chronology</td><td><p> It converts the input  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
 <tr class="a"><td><b>localTimeToStr</b></td><td>Function&lt;LocalTime, String&gt;</td><td>FormatType formatType<br />String format<br />String locale</td><td><p> It converts the input  LocalTime into a  String by means of the given pattern or style (depending on the value of formatType parameter). </p></td></tr>
 </tbody></table>
-
-
 
 </subsection>
       

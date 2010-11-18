@@ -26,6 +26,7 @@
       <subsection name="2. Functions">
 
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -68,10 +69,8 @@
 <tr class="b"><td><b>timestampToMutableDateTime</b></td><td>Function&lt;Timestamp, MutableDateTime&gt;</td><td>Chronology chronology</td><td><p> The input  Timestamp is converted into a  MutableDateTime with the given  Chronology </p></td></tr>
 </tbody></table>
 
-
 </subsection>
       
     </section>
   </body>
 </document>
-

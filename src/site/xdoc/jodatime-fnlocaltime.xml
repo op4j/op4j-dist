@@ -25,6 +25,8 @@
 
       <subsection name="2. Functions">
 
+
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -66,7 +68,6 @@
 <tr class="a"><td><b>timestampToLocalTime</b></td><td>Function&lt;Timestamp, LocalTime&gt;</td><td>DateTimeZone dateTimeZone</td><td><p> The given  Timestamp is converted into a  LocalTime in the given  DateTimeZone </p></td></tr>
 <tr class="b"><td><b>timestampToLocalTime</b></td><td>Function&lt;Timestamp, LocalTime&gt;</td><td>Chronology chronology</td><td><p> The given  Timestamp is converted into a  LocalTime with the given  Chronology </p></td></tr>
 </tbody></table>
-
 
 </subsection>
       

@@ -25,6 +25,8 @@
 
       <subsection name="2. Functions">
 
+
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -96,10 +98,8 @@
 <tr class="a"><td><b>timestampFieldCollectionToPeriod</b></td><td>Function&lt;Collection&lt;Timestamp&gt;, Period&gt;</td><td>PeriodType periodType<br />Chronology chronology</td><td><p> The function receives a  Collection of two  Timestamp elements used as the start and end of the  Period it creates. The  Period will be created using the specified  specified  PeriodType and  Chronology </p></td></tr>
 </tbody></table>
 
-
-      </subsection>
+</subsection>
       
     </section>
   </body>
 </document>
-
