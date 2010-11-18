@@ -40,11 +40,11 @@ JodaTime Extension
     
     * {{{./jodatime-fninterval.html}FnInterval}}: contains functions returning an Interval as its output
     
-    * {{{./jodatime-fnlocaldate}FnLocalDate}}: deals with the conversion from several input types into LocalDate
+    * {{{./jodatime-fnlocaldate.html}FnLocalDate}}: deals with the conversion from several input types into LocalDate
     
-    * {{{./jodatime-fnlocaltime}FnLocalTime}}: its functions generate a LocalTime as its output
+    * {{{./jodatime-fnlocaltime.html}FnLocalTime}}: its functions generate a LocalTime as its output
     
-    * {{{./jodatime-fnperiod}FnPeriod}}: contains a set of functions whose output is Period
+    * {{{./jodatime-fnperiod.html}FnPeriod}}: contains a set of functions whose output is Period
 
     * FnJodaTimeUtils: is a shortcut to all of the methods included
     in the classes above. This way, 
