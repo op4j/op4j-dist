@@ -57,7 +57,6 @@
           <item name="· FnCalendar" href="fncalendar.html"/>
           <item name="· FnDate" href="fndate.html"/>
           <item name="· FnObject" href="fnobject.html"/>
-          <item name="· FnReduce" href="fnreduce.html"/>
           <item name="· FnString" href="fnstring.html"/>
           <item name="· Numbers">
             <item name="· FnNumber" href="fnnumber.html"/>
@@ -73,6 +72,7 @@
             <item name="· FnList" href="fnlist.html"/>
             <item name="· FnMap" href="fnmap.html"/>
             <item name="· FnSet" href="fnset.html"/>
+            <item name="· FnTuple" href="fntuple.html"/>
           </item>
         </item>
         <item name="· Javadoc" href="apidocs/op4j/index.html"/>
