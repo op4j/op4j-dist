@@ -24,9 +24,6 @@
 
       <subsection name="2. Functions">
   
-
-
-
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -62,7 +59,7 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>or</b></td><td>Function&lt;R,Boolean&gt;</td><td>IFunction&lt;X,Boolean&gt; left<br />IFunction&lt;? super R,Boolean&gt; right</td><td><p> Takes two boolean functions (<tt>Function&lt;?,Boolean&gt;</tt>) as parameters and returns another one which returns true if any of the functions returns true, and false if not. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>toBigDecimal</b></td><td>Function&lt;Boolean,BigDecimal&gt;</td><td></td><td><p> Converts a Boolean to a BigDecimal. true = 1, false = 0. </p></td></tr>
+<tr class="b"><td><b>toBigDecimal</b></td><td>Function&lt;Boolean,BigDecimal&gt;</td><td></td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>toBigInteger</b></td><td>Function&lt;Boolean,BigInteger&gt;</td><td></td><td><p> Converts a Boolean to a BigInteger. true = 1, false = 0. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -79,9 +76,7 @@
 <tr class="a"><td><b>toShort</b></td><td>Function&lt;Boolean,Short&gt;</td><td></td><td><p> Converts a Boolean to a Short. true = 1, false = 0. </p></td></tr>
 </tbody></table>
 
-
-      </subsection>
-      
-    </section>
-  </body>
+</subsection>
+</section>
+</body>
 </document>

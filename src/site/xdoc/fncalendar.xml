@@ -26,12 +26,10 @@
 
       <subsection name="2. Functions">
 
-
-
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
-<tr class="b"><td><b>add</b></td><td>Function&lt;Calendar,Calendar&gt;</td><td>int calendarField<br />int amount</td><td><p> Modifies a Calendar by adding a positive or negative amount to one of its fields.  </p> <p> Fields are specified by means of <tt>java.util.Calendar</tt> constants, like <tt>FnCalendar.add(Calendar.DAY_OF_MONTH, 1)</tt>. </p></td></tr>
+<tr class="b"><td><b>add</b></td><td>Function&lt;Calendar,Calendar&gt;</td><td>int calendarField<br />int amount</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>addDays</b></td><td>Function&lt;Calendar,Calendar&gt;</td><td>int amount</td><td><p> Modifies a Calendar by adding a positive or negative amount to one the "day" property (<tt>java.util.Calendar.DATE</tt>).  </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -101,9 +99,7 @@
 <tr class="a"><td><b>truncate</b></td><td>Function&lt;Calendar,Calendar&gt;</td><td>int calendarField</td><td><p> Truncates the target Calendar, setting the specified field as the  most significant field. </p> <p> Based on <tt>org.apache.commons.lang.time.DateUtils.truncate()</tt>. </p></td></tr>
 </tbody></table>
 
-
-      </subsection>
-      
-    </section>
-  </body>
+</subsection>
+</section>
+</body>
 </document>
