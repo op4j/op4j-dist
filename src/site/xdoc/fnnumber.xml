@@ -176,7 +176,7 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>roundFloat</b></td><td>Function&lt;Float,Float&gt;</td><td>int scale<br />RoundingMode roundingMode</td><td><p> It rounds the target with the specified scale and rounding mode </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>toBigDecimal</b></td><td>Function&lt;Number,BigDecimal&gt;</td><td></td><td></td></tr>
+<tr class="b"><td><b>toBigDecimal</b></td><td>Function&lt;Number,BigDecimal&gt;</td><td></td><td><p> It converts the input into a  BigDecimal </p></td></tr>
 <tr class="a"><td><b>toBigDecimal</b></td><td>Function&lt;Number,BigDecimal&gt;</td><td>int scale<br />RoundingMode roundingMode</td><td><p> It converts the input into a  BigDecimal using the given scale and  RoundingMode </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>toBigInteger</b></td><td>Function&lt;Number,BigInteger&gt;</td><td></td><td><p> It converts the input into a  BigInteger </p></td></tr>
@@ -247,3 +247,5 @@
 </section>
 </body>
 </document>
+
+

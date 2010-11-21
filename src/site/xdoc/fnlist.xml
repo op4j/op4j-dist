@@ -236,11 +236,14 @@ Op.on(new String[][] {Op.onArrayFor("first", "second").get(), Op.onArrayFor("thi
         <div>
         <!-- Table with functions -->
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
 <tr class="b"><td><b>flattenArrays</b></td><td>Function&lt;List&lt;T[]&gt;,List&lt;T&gt;&gt;</td><td></td><td></td></tr>
 </tbody></table>
+
+
 
         <!--  -->
         </div>
@@ -265,11 +268,13 @@ Op.onListFor(Op.onListFor("first", "second").get(), Op.onListFor("third").get())
         <div>
         <!-- Table with functions -->
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
 <tr class="b"><td><b>flattenLists</b></td><td>Function&lt;List&lt;List&lt;T&gt;&gt;,List&lt;T&gt;&gt;</td><td></td><td></td></tr>
 </tbody></table>
+
 
         <!--  -->
         </div>
@@ -293,6 +298,8 @@ Op.onListFor(Op.onSetFor("first", "second").get(), Op.onSetFor("third").get())
         
         <div>
         <!-- Table with functions -->
+
+
 
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>

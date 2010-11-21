@@ -24,6 +24,7 @@
 
       <subsection name="2. Functions">
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -187,12 +188,14 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>replaceWith</b></td><td>Function&lt;Object,T&gt;</td><td>T object</td><td><p> Replaces the target object with the object specified as a parameter. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>toStr</b></td><td>Function&lt;Object,String&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>toStr</b></td><td>Function&lt;Object,String&gt;</td><td></td><td><p> Converts the target object to String using the default <tt>toString()</tt> method. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>toStrNullSafe</b></td><td>Function&lt;Object,String&gt;</td><td></td><td><p> Converts the target object to String using the default <tt>toString()</tt> method, returning null if target is null. </p></td></tr>
 </tbody></table>
+
 
 </subsection>
 </section>
 </body>
 </document>
+
