@@ -58,7 +58,11 @@
 <tr class="a"><td><b>unitWith</b></td><td>Function&lt;X,Unit&lt;A&gt;&gt;</td><td>Function&lt;? super X,A&gt; value0Function</td><td></td></tr>
 </tbody></table>
 
+
 </subsection>
 </section>
 </body>
 </document>
+
+
+

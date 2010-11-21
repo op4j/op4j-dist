@@ -116,6 +116,7 @@ Op.onSetFor("ff0000", "red", "00ff00", "green", "0000ff", "blue")
         <div>
 	    <!-- Table with functions -->
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -211,6 +212,7 @@ Op.onSetFor("ff0000", "red", "00ff00", "green", "0000ff", "blue")
 <tr class="b"><td><b>zipValuesFrom</b></td><td>Function&lt;Set&lt;T&gt;,Map&lt;T,V&gt;&gt;</td><td>V[] values</td><td></td></tr>
 </tbody></table>
 
+
         <!--  -->
         </div>
       
@@ -234,11 +236,13 @@ Op.onSetFor(Op.onArrayFor("first", "second").get(), Op.onArrayFor("third").get()
         <div>
         <!-- Table with functions -->
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
 <tr class="b"><td><b>flattenArrays</b></td><td>Function&lt;Set&lt;T[]&gt;,Set&lt;T&gt;&gt;</td><td></td><td></td></tr>
 </tbody></table>
+
 
         <!--  -->
         </div>
@@ -263,11 +267,13 @@ Op.onSetFor(Op.onListFor("first", "second").get(), Op.onListFor("third").get())
         <div>
         <!-- Table with functions -->
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
 <tr class="b"><td><b>flattenLists</b></td><td>Function&lt;Set&lt;List&lt;T&gt;&gt;,Set&lt;T&gt;&gt;</td><td></td><td></td></tr>
 </tbody></table>
+
 
         <!--  -->
         </div>
@@ -291,6 +297,8 @@ Op.onSetFor(Op.onSetFor("first", "second").get(), Op.onSetFor("third").get())
         
         <div>
         <!-- Table with functions -->
+
+
 
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>

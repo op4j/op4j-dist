@@ -25,6 +25,7 @@
 
       <subsection name="2. Functions">
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -175,7 +176,7 @@
 <tr class="a"><td><b>substringBetween</b></td><td>Function&lt;String, String&gt;</td><td>String tag</td><td><p> Returns the substring between tag and tag or null if there is no match. It calls   StringUtils#substringBetween(String, String) </p></td></tr>
 <tr class="b"><td><b>substringBetween</b></td><td>Function&lt;String, String&gt;</td><td>String open<br />String close</td><td><p> Returns the substring between open and close or null if there is no match. It calls   StringUtils#substringBetween(String, String, String) </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>toBigDecimal</b></td><td>Function&lt;String,BigDecimal&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>toBigDecimal</b></td><td>Function&lt;String,BigDecimal&gt;</td><td></td><td><p> Converts a String into a BigDecimal, using the default configuration for for decimal point and precision. </p></td></tr>
 <tr class="b"><td><b>toBigDecimal</b></td><td>Function&lt;String,BigDecimal&gt;</td><td>Locale locale</td><td><p> Converts a String into a BigDecimal, using the specified locale for decimal point and thousands separator configuration. </p></td></tr>
 <tr class="a"><td><b>toBigDecimal</b></td><td>Function&lt;String,BigDecimal&gt;</td><td>String locale</td><td><p> Converts a String into a BigDecimal, using the specified locale for decimal point and thousands separator configuration. Locale is specified as a String (for example: "en_US", "es_ES", etc.) </p></td></tr>
 <tr class="b"><td><b>toBigDecimal</b></td><td>Function&lt;String,BigDecimal&gt;</td><td>DecimalPoint decimalPoint</td><td><p> Converts a String into a BigDecimal, using the specified decimal point configuration ( DecimalPoint). The target String should contain no thousand separators. </p></td></tr>
@@ -285,3 +286,5 @@
 </section>
 </body>
 </document>
+
+
