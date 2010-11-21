@@ -27,6 +27,7 @@
 
       <subsection name="2. Functions">
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -60,31 +61,31 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>eq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>BigInteger object</td><td><p> Determines whether the target object and the specified object are equal by calling the <tt>equals</tt> method on the target object. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the target object is greater or equal to the specified object in value, this is, whether <tt>target.compareTo(object) &gt;= 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
+<tr class="a"><td><b>eqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function  on the target object and the specified object parameter are equal by calling the <tt>equals</tt> method. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>eqValue</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object and the specified object are equal in value, this is, whether <tt>target.compareTo(object) == 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>eqValueBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function  on the target object and the specified object parameter are equal by calling the <tt>equals</tt> method. </p></td></tr>
+<tr class="a"><td><b>eqValueBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object and the specified object parameter are equal in value, this is, whether <tt>functionResult.compareTo(object) == 0</tt>.  Both the function result and the specified object have to implement   Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>greaterOrEqTo</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object is greater than the specified object in value, this is, whether <tt>target.compareTo(object) > 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
+<tr class="b"><td><b>greaterOrEqTo</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object is greater or equal to the specified object in value, this is, whether <tt>target.compareTo(object) &gt;= 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>greaterOrEqToBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object is greater than the specified object parameter in value, this is, whether <tt>functionResult.compareTo(object) > 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
+<tr class="a"><td><b>greaterOrEqToBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object is greater or equal to the specified object parameter in value, this is, whether <tt>functionResult.compareTo(object) &gt;= 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>greaterThan</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object is less or equal to the specified object in value, this is, whether <tt>target.compareTo(object) &lt;= 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
+<tr class="b"><td><b>greaterThan</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object is greater than the specified object in value, this is, whether <tt>target.compareTo(object) > 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>greaterThanBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object is less or equal to the specified object parameter in value, this is, whether <tt>functionResult.compareTo(object) &lt;= 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
+<tr class="a"><td><b>greaterThanBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object is greater than the specified object parameter in value, this is, whether <tt>functionResult.compareTo(object) > 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>isNotNull</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td></td><td><p> Determines whether the target object is null or not. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>isNull</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td></td><td><p> Determines whether the result of executing the specified function on the target object is greater or equal to the specified object parameter in value, this is, whether <tt>functionResult.compareTo(object) &gt;= 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
+<tr class="a"><td><b>isNull</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td></td><td><p> Determines whether the target object is null or not. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>lessOrEqTo</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object is less than the specified object in value, this is, whether <tt>target.compareTo(object) &lt; 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
+<tr class="b"><td><b>lessOrEqTo</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object is less or equal to the specified object in value, this is, whether <tt>target.compareTo(object) &lt;= 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>lessOrEqToBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object is less than the specified object parameter in value, this is, whether <tt>functionResult.compareTo(object) &lt; 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
+<tr class="a"><td><b>lessOrEqToBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object is less or equal to the specified object parameter in value, this is, whether <tt>functionResult.compareTo(object) &lt;= 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>lessThan</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object is less than the specified object in value, this is, whether <tt>target.compareTo(object) &lt; 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>lessThanBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object and the specified object parameter are NOT equal in value, this is, whether <tt>functionResult.compareTo(object) != 0</tt>.  Both the function result and the specified object have to implement   Comparable. </p></td></tr>
+<tr class="a"><td><b>lessThanBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object is less than the specified object parameter in value, this is, whether <tt>functionResult.compareTo(object) &lt; 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>max</b></td><td>Function&lt;Iterable&lt;BigInteger&gt;, BigInteger&gt;</td><td></td><td><p> It returns the maximum number from an  Iterable input object </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -114,11 +115,11 @@
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>notEq</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>BigInteger object</td><td><p> Determines whether the target object and the specified object are NOT equal by calling the <tt>equals</tt> method on the target object. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object and the specified object parameter are equal in value, this is, whether <tt>functionResult.compareTo(object) == 0</tt>.  Both the function result and the specified object have to implement   Comparable. </p></td></tr>
+<tr class="a"><td><b>notEqBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function  on the target object and the specified object parameter are NOT equal by calling the <tt>equals</tt> method. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>notEqValue</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>Number object</td><td><p> Determines whether the target object and the specified object are NOT equal in value, this is, whether <tt>target.compareTo(object) != 0</tt>. Both the target and the specified object have to implement  Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>notEqValueBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function  on the target object and the specified object parameter are NOT equal by calling the <tt>equals</tt> method. </p></td></tr>
+<tr class="a"><td><b>notEqValueBy</b></td><td>Function&lt;BigInteger,Boolean&gt;</td><td>IFunction&lt;BigInteger,?&gt; by<br />Object object</td><td><p> Determines whether the result of executing the specified function on the target object and the specified object parameter are NOT equal in value, this is, whether <tt>functionResult.compareTo(object) != 0</tt>.  Both the function result and the specified object have to implement   Comparable. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>pow</b></td><td>Function&lt;BigInteger, BigInteger&gt;</td><td>int power</td><td><p> It performs the operation target<sup>power</sup> and returns its value </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -156,7 +157,7 @@
 <tr class="a"><td><b>toPercentStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>Locale locale<br />boolean groupingUsed</td><td><p> A  String representing a percentage is created from the target number  in the given  Locale. Grouping will be used depending on the value of the groupingUsed parameter. </p></td></tr>
 <tr class="b"><td><b>toPercentStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>String locale<br />boolean groupingUsed</td><td><p> A  String representing a percentage is created from the target number  in the given locale. Grouping will be used depending on the value of the groupingUsed parameter. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td></td><td><p> It returns the  String representation of the input number </p></td></tr>
 <tr class="b"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>boolean groupingUsed</td><td><p> It returns the  String representation of the input number either using or not using grouping </p></td></tr>
 <tr class="a"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>Locale locale</td><td><p> It returns the  String representation of the target number in the given  Locale   </p></td></tr>
 <tr class="b"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>String locale</td><td><p> It returns the  String representation of the target number in the given locale   </p></td></tr>
@@ -164,7 +165,10 @@
 <tr class="b"><td><b>toStr</b></td><td>Function&lt;BigInteger,String&gt;</td><td>String locale<br />boolean groupingUsed</td><td><p> It returns the  String representation of the target number in the given locale. Grouping  will be used depending on the value of the groupingUsed parameter   </p></td></tr>
 </tbody></table>
 
+
 </subsection>
 </section>
 </body>
 </document>
+
+

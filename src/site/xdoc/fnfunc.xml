@@ -27,7 +27,7 @@
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
-<tr class="b"><td><b>chain</b></td><td>Function&lt;X,Z&gt;</td><td>IFunction&lt;X,Y&gt; fn1<br />IFunction&lt;? super Y,Z&gt; fn2</td><td></td></tr>
+<tr class="b"><td><b>chain</b></td><td>Function&lt;X,Z&gt;</td><td>IFunction&lt;X,Y&gt; fn1<br />IFunction&lt;? super Y,Z&gt; fn2</td><td><p> Chains two functions together. The returned function executes the specified functions in sequence, being <tt>fn2</tt> executed on the results of <tt>fn1</tt>. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="a"><td><b>ifFalseThen</b></td><td>Function&lt;T,T&gt;</td><td>Type&lt;T&gt; targetType<br />IFunction&lt;? super T, Boolean&gt; condition<br />IFunction&lt;? super T,? extends T&gt; thenFunction</td><td><p> Builds a function that will execute the specified function <tt>thenFunction</tt>  only if the result of executing <tt>condition</tt> on the target object is false. </p> <p> The built function cannot change the return type (receives <tt>T</tt> and returns <tt>T</tt>) because the <tt>thenFunction</tt> could remain unexecuted, and so the type returned by <tt>thenFunction</tt> must be the same as the type required as input, in order to keep consistency. </p></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
@@ -66,7 +66,11 @@
 <tr class="b"><td><b>whileTrue</b></td><td>Function&lt;T,T&gt;</td><td>IFunction&lt;? super T, Boolean&gt; condition<br />IFunction&lt;? super T, T&gt; function</td><td><p> Executes the specified <tt>function</tt> iteratively (first on the target, then  on the result of the previous iteration) while the result of executing the  <tt>condition</tt> function on the target object (or the result of the previous <tt>function</tt> iteration) is true. </p></td></tr>
 </tbody></table>
 
+
 </subsection>
 </section>
 </body>
 </document>
+
+
+

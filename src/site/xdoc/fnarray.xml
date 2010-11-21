@@ -116,6 +116,9 @@ Op.onArrayFor("ff0000", "red", "00ff00", "green", "0000ff", "blue")
         <div>
 	      <!-- Table with functions -->
        
+
+
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
@@ -145,73 +148,75 @@ Op.onArrayFor("ff0000", "red", "00ff00", "green", "0000ff", "blue")
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
 <tr class="b"><td><b>insert</b></td><td>Function&lt;T[],T[]&gt;</td><td>int position<br />T... newElements</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>notContains</b></td><td>Function&lt;T[],Boolean&gt;</td><td>T object</td><td></td></tr>
+<tr class="b"><td><b>notContains</b></td><td>Function&lt;T[],Boolean&gt;</td><td>T object</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>removeAllEqual</b></td><td>Function&lt;T[],T[]&gt;</td><td>T... values</td><td></td></tr>
+<tr class="a"><td><b>removeAllEqual</b></td><td>Function&lt;T[],T[]&gt;</td><td>T... values</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>removeAllFalse</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
+<tr class="b"><td><b>removeAllFalse</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>removeAllIndexes</b></td><td>Function&lt;T[],T[]&gt;</td><td>int... indexes</td><td></td></tr>
+<tr class="a"><td><b>removeAllIndexes</b></td><td>Function&lt;T[],T[]&gt;</td><td>int... indexes</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>removeAllIndexesNot</b></td><td>Function&lt;T[],T[]&gt;</td><td>int... indexes</td><td></td></tr>
+<tr class="b"><td><b>removeAllIndexesNot</b></td><td>Function&lt;T[],T[]&gt;</td><td>int... indexes</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>removeAllNotNullAndFalse</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
+<tr class="a"><td><b>removeAllNotNullAndFalse</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>removeAllNotNullAndTrue</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
+<tr class="b"><td><b>removeAllNotNullAndTrue</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>removeAllNull</b></td><td>Function&lt;T[],T[]&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>removeAllNull</b></td><td>Function&lt;T[],T[]&gt;</td><td></td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>removeAllNullOrFalse</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
+<tr class="b"><td><b>removeAllNullOrFalse</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>removeAllNullOrTrue</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
+<tr class="a"><td><b>removeAllNullOrTrue</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>removeAllTrue</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
+<tr class="b"><td><b>removeAllTrue</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T,Boolean&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>reverse</b></td><td>Function&lt;T[],T[]&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>reverse</b></td><td>Function&lt;T[],T[]&gt;</td><td></td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>sort</b></td><td>Function&lt;T[],T[]&gt;</td><td></td><td></td></tr>
-<tr class="b"><td><b>sort</b></td><td>Function&lt;T[],T[]&gt;</td><td>Comparator&lt;? super T&gt; comparator</td><td></td></tr>
+<tr class="b"><td><b>sort</b></td><td>Function&lt;T[],T[]&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>sort</b></td><td>Function&lt;T[],T[]&gt;</td><td>Comparator&lt;? super T&gt; comparator</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>sortBy</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T, ?&gt; by</td><td></td></tr>
+<tr class="b"><td><b>sortBy</b></td><td>Function&lt;T[],T[]&gt;</td><td>IFunction&lt;? super T, ?&gt; by</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>toGroupMapOf</b></td><td>Function&lt;T[],Map&lt;K,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />IFunction&lt;? super T,Map.Entry&lt;K,V&gt;&gt; mapBuilder</td><td></td></tr>
-<tr class="a"><td><b>toGroupMapOf</b></td><td>Function&lt;T[],Map&lt;K,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />IFunction&lt;? super T,K&gt; keyFunction<br />IFunction&lt;? super T,V&gt; valueFunction</td><td></td></tr>
+<tr class="a"><td><b>toGroupMapOf</b></td><td>Function&lt;T[],Map&lt;K,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />IFunction&lt;? super T,Map.Entry&lt;K,V&gt;&gt; mapBuilder</td><td></td></tr>
+<tr class="b"><td><b>toGroupMapOf</b></td><td>Function&lt;T[],Map&lt;K,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />IFunction&lt;? super T,K&gt; keyFunction<br />IFunction&lt;? super T,V&gt; valueFunction</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>toList</b></td><td>Function&lt;T[],List&lt;T&gt;&gt;</td><td></td><td></td></tr>
+<tr class="a"><td><b>toList</b></td><td>Function&lt;T[],List&lt;T&gt;&gt;</td><td></td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>toMap</b></td><td>Function&lt;T[],Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super T,Map.Entry&lt;K,V&gt;&gt; mapBuilder</td><td></td></tr>
-<tr class="b"><td><b>toMap</b></td><td>Function&lt;T[],Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super T,K&gt; keyFunction<br />IFunction&lt;? super T,V&gt; valueFunction</td><td></td></tr>
+<tr class="b"><td><b>toMap</b></td><td>Function&lt;T[],Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super T,Map.Entry&lt;K,V&gt;&gt; mapBuilder</td><td></td></tr>
+<tr class="a"><td><b>toMap</b></td><td>Function&lt;T[],Map&lt;K,V&gt;&gt;</td><td>IFunction&lt;? super T,K&gt; keyFunction<br />IFunction&lt;? super T,V&gt; valueFunction</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>toSet</b></td><td>Function&lt;T[],Set&lt;T&gt;&gt;</td><td></td><td></td></tr>
+<tr class="b"><td><b>toSet</b></td><td>Function&lt;T[],Set&lt;T&gt;&gt;</td><td></td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>zipAndGroupKeys</b></td><td>Function&lt;T[],Map&lt;K,T[]&gt;&gt;</td><td>K... keys</td><td></td></tr>
+<tr class="a"><td><b>zipAndGroupKeys</b></td><td>Function&lt;T[],Map&lt;K,T[]&gt;&gt;</td><td>K... keys</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>zipAndGroupKeysBy</b></td><td>Function&lt;T[],Map&lt;K,T[]&gt;&gt;</td><td>IFunction&lt;? super T, K&gt; eval</td><td></td></tr>
+<tr class="b"><td><b>zipAndGroupKeysBy</b></td><td>Function&lt;T[],Map&lt;K,T[]&gt;&gt;</td><td>IFunction&lt;? super T, K&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>zipAndGroupKeysFrom</b></td><td>Function&lt;T[],Map&lt;K,T[]&gt;&gt;</td><td>Collection&lt;K&gt; keys</td><td></td></tr>
-<tr class="a"><td><b>zipAndGroupKeysFrom</b></td><td>Function&lt;T[],Map&lt;K,T[]&gt;&gt;</td><td>K[] keys</td><td></td></tr>
+<tr class="a"><td><b>zipAndGroupKeysFrom</b></td><td>Function&lt;T[],Map&lt;K,T[]&gt;&gt;</td><td>Collection&lt;K&gt; keys</td><td></td></tr>
+<tr class="b"><td><b>zipAndGroupKeysFrom</b></td><td>Function&lt;T[],Map&lt;K,T[]&gt;&gt;</td><td>K[] keys</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>zipAndGroupValues</b></td><td>Function&lt;T[],Map&lt;T,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />V... values</td><td></td></tr>
+<tr class="a"><td><b>zipAndGroupValues</b></td><td>Function&lt;T[],Map&lt;T,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />V... values</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>zipAndGroupValuesBy</b></td><td>Function&lt;T[],Map&lt;T,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />IFunction&lt;? super T, V&gt; eval</td><td></td></tr>
+<tr class="b"><td><b>zipAndGroupValuesBy</b></td><td>Function&lt;T[],Map&lt;T,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />IFunction&lt;? super T, V&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>zipAndGroupValuesFrom</b></td><td>Function&lt;T[],Map&lt;T,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />Collection&lt;V&gt; values</td><td></td></tr>
-<tr class="a"><td><b>zipAndGroupValuesFrom</b></td><td>Function&lt;T[],Map&lt;T,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />V[] values</td><td></td></tr>
+<tr class="a"><td><b>zipAndGroupValuesFrom</b></td><td>Function&lt;T[],Map&lt;T,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />Collection&lt;V&gt; values</td><td></td></tr>
+<tr class="b"><td><b>zipAndGroupValuesFrom</b></td><td>Function&lt;T[],Map&lt;T,V[]&gt;&gt;</td><td>Type&lt;V&gt; valueType<br />V[] values</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>zipKeys</b></td><td>Function&lt;T[],Map&lt;K,T&gt;&gt;</td><td>K... keys</td><td></td></tr>
+<tr class="a"><td><b>zipKeys</b></td><td>Function&lt;T[],Map&lt;K,T&gt;&gt;</td><td>K... keys</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>zipKeysBy</b></td><td>Function&lt;T[],Map&lt;K,T&gt;&gt;</td><td>IFunction&lt;? super T, K&gt; eval</td><td></td></tr>
+<tr class="b"><td><b>zipKeysBy</b></td><td>Function&lt;T[],Map&lt;K,T&gt;&gt;</td><td>IFunction&lt;? super T, K&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>zipKeysFrom</b></td><td>Function&lt;T[],Map&lt;K,T&gt;&gt;</td><td>Collection&lt;K&gt; keys</td><td></td></tr>
-<tr class="a"><td><b>zipKeysFrom</b></td><td>Function&lt;T[],Map&lt;K,T&gt;&gt;</td><td>K[] keys</td><td></td></tr>
+<tr class="a"><td><b>zipKeysFrom</b></td><td>Function&lt;T[],Map&lt;K,T&gt;&gt;</td><td>Collection&lt;K&gt; keys</td><td></td></tr>
+<tr class="b"><td><b>zipKeysFrom</b></td><td>Function&lt;T[],Map&lt;K,T&gt;&gt;</td><td>K[] keys</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>zipValues</b></td><td>Function&lt;T[],Map&lt;T,V&gt;&gt;</td><td>V... values</td><td></td></tr>
+<tr class="a"><td><b>zipValues</b></td><td>Function&lt;T[],Map&lt;T,V&gt;&gt;</td><td>V... values</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="a"><td><b>zipValuesBy</b></td><td>Function&lt;T[],Map&lt;T,V&gt;&gt;</td><td>IFunction&lt;? super T, V&gt; eval</td><td></td></tr>
+<tr class="b"><td><b>zipValuesBy</b></td><td>Function&lt;T[],Map&lt;T,V&gt;&gt;</td><td>IFunction&lt;? super T, V&gt; eval</td><td></td></tr>
 <tr bgcolor="#A4A4A4" class=""><td bgcolor="#A4A4A4" colspan="4"></td></tr>
-<tr class="b"><td><b>zipValuesFrom</b></td><td>Function&lt;T[],Map&lt;T,V&gt;&gt;</td><td>Collection&lt;V&gt; values</td><td></td></tr>
-<tr class="a"><td><b>zipValuesFrom</b></td><td>Function&lt;T[],Map&lt;T,V&gt;&gt;</td><td>V[] values</td><td></td></tr>
+<tr class="a"><td><b>zipValuesFrom</b></td><td>Function&lt;T[],Map&lt;T,V&gt;&gt;</td><td>Collection&lt;V&gt; values</td><td></td></tr>
+<tr class="b"><td><b>zipValuesFrom</b></td><td>Function&lt;T[],Map&lt;T,V&gt;&gt;</td><td>V[] values</td><td></td></tr>
 </tbody></table>
+
+
        
         <!--  -->
         </div>
@@ -237,11 +242,13 @@ Op.on(new String[][] {Op.onArrayFor("first", "second").get(), Op.onArrayFor("thi
         <div>
         <!-- Table with functions -->
         
-        <table border="0">
+
+<table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
 <tr class="b"><td><b>flattenArrays</b></td><td>Function&lt;T[][],T[]&gt;</td><td></td><td></td></tr>
 </tbody></table>
+
         
         <!--  -->
         </div>
@@ -267,11 +274,14 @@ Op.on(new List[] {Op.onListFor("first", "second").get(), Op.onListFor("third").g
         <div>
         <!-- Table with functions -->
 
+
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
 <tr class="b"><td><b>flattenLists</b></td><td>Function&lt;List&lt;T&gt;[],T[]&gt;</td><td></td><td></td></tr>
 </tbody></table>
+
 
         <!--  -->
         </div>
@@ -297,11 +307,13 @@ Op.on(new Set[] {Op.onSetFor("first", "second").get(), Op.onSetFor("third").get(
         <div>
         <!-- Table with functions -->
 
+
 <table border="0">
 <thead><tr><th>Function name</th><th>Type</th><th width="240px">Params</th><th>Description</th></tr></thead>
 <tbody>
 <tr class="b"><td><b>flattenSets</b></td><td>Function&lt;Set&lt;T&gt;[],T[]&gt;</td><td></td><td></td></tr>
 </tbody></table>
+
 
         <!--  -->
         </div>
