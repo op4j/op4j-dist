@@ -21,7 +21,7 @@ op4j-ognl dependencies on other libraries
   
     * Apache Commons-Lang 2.4 or later
   
-    * OGNL 2.7.1 or later
+    * OGNL 3.0 or later
   
     * Javassist 3.6.ga or later
 
