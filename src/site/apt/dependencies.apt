@@ -23,7 +23,7 @@ op4j-ognl dependencies on other libraries
   
     * OGNL 3.0 or later
   
-    * Javassist 3.6.ga or later
+    * Javassist 3.14.0-GA or later
 
 
 op4j-jodatime dependencies on other libraries
