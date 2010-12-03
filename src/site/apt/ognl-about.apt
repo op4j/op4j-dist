@@ -20,7 +20,7 @@ user.company.name
   
 +--
 String name =
-    Op.on(session).exec(FnOgnl.evalForString("user.company.name")).get();
+    Op.on(session).exec(FnOgnl.s("user.company.name")).get();
 +--
   
   But OGNL can do much more than just navigating getters, like:

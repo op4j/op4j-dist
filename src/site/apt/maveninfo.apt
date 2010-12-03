@@ -15,5 +15,24 @@ Using op4j with Maven
         <scope>compile</scope>
     </dependency>
 +--  
+
+  And if you want to use the optional op4j-ognl or op4j-jodatime packages:  
   
++--  
+    <dependency>
+        <groupId>org.op4j</groupId>
+        <artifactId>op4j-ognl</artifactId>
+        <version>[version]</version>
+        <scope>compile</scope>
+    </dependency>
++--  
+  
++--  
+    <dependency>
+        <groupId>org.op4j</groupId>
+        <artifactId>op4j-jodatime</artifactId>
+        <version>[version]</version>
+        <scope>compile</scope>
+    </dependency>
++--  
    

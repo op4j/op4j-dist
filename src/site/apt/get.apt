@@ -63,7 +63,7 @@ List<String> userNames = Op.on(users).map(Get.attrOfString("name")).get();
   <<<attrOfSetOfString()>>> | <<<Function\<Object,Set\<String\>\>>>>                  |
 *----------------------------+-------------------------------------------------+
   
-  There also exist more convenient abbreviation methods, which are:
+  There also exist more convenient abbreviated methods, which are:
   
 *----------------------------+-------------------------------------------------+
   <<Method>>                 | <<Returned function type>>                      |

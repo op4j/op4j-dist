@@ -63,7 +63,7 @@ List<String> userNames = Op.on(users).map(Call.methodForString("getName")).get()
   <<<methodForSetOfString(...)>>> | <<<Function\<Object,Set\<String\>\>>>>                  |
 *----------------------------+-------------------------------------------------+
     
-  There also exist more convenient abbreviation methods, which are:
+  There also exist more convenient abbreviated methods, which are:
   
 *----------------------------+-------------------------------------------------+
   <<Method>>                 | <<Returned function type>>                      |
@@ -109,7 +109,7 @@ List<String> userNames = Op.on(users).map(Call.methodForString("getName")).get()
   <<<setOfString()>>>        | <<<Function\<Object,Set\<String\>\>>>>          |
 *----------------------------+-------------------------------------------------+
   
-  Every <methodForX(...)> or abbreviation method can be passed parameters, and these 
+  Every <methodForX(...)> or abbreviated method can be passed parameters, and these 
   have to correspond with the parameters of the method being called.
 
 +--
@@ -117,6 +117,6 @@ List<User> users = ...;
 Group group = ...;
 ...
 List<User> usersInGroup = 
-    Op.on(users).removeAllFalse(Call.methodForBoolean("isInGroup", group).get();
+    Op.on(users).removeAllFalse(Call.bool("isInGroup", group).get();
 +--
   
