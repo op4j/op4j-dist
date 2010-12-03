@@ -8,16 +8,18 @@ op4j dependencies on other libraries
   
   op4j depends on the following libraries:
   
-    * javaRuntype 1.1 or later
+    * javaRuntype 1.2 or later
   
     * Apache Commons-Lang 2.4 or later
+    
+    * javatuples 1.1 or later
 
 
 op4j-ognl dependencies on other libraries
   
   The op4j-ognl extension depends on the following libraries (besides the op4j core itself):
   
-    * javaRuntype 1.1 or later
+    * javaRuntype 1.2 or later
   
     * Apache Commons-Lang 2.4 or later
   
