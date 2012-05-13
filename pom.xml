@@ -4,7 +4,7 @@
   <groupId>org.op4j</groupId>
   <artifactId>op4j-dist</artifactId>
   <packaging>pom</packaging>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <name>op4j-dist</name>
   <description>op4j-dist</description>
   <url>http://www.op4j.org</url>
