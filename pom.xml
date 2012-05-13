@@ -23,9 +23,9 @@
   </organization>
   
   <scm>
-    <url>scm:svn:http://op4j.svn.sourceforge.net/svnroot/op4j/trunk/op4j-dist</url>
-    <connection>scm:svn:https://op4j.svn.sourceforge.net/svnroot/op4j/trunk/op4j-dist</connection>
-    <developerConnection>scm:svn:https://op4j.svn.sourceforge.net/svnroot/op4j/trunk/op4j-dist</developerConnection>
+    <url>scm:git:git@github.com:op4j/op4j-dist.git</url>
+    <connection>scm:git:git@github.com:op4j/op4j-dist.git</connection>
+    <developerConnection>scm:git:git@github.com:op4j/op4j-dist.git</developerConnection>
   </scm>
   
   <developers>
