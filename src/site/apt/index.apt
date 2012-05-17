@@ -2,13 +2,10 @@
   Main
   -------
 
-  <<op4j 1.1 RELEASED!>> (December 3rd, 2010). <<{{{./download.html}[DOWNLOAD]}}>> 
+  <<op4j 1.2 RELEASED!>> (May 14th, 2012). <<{{{./download.html}[DOWNLOAD]}}>> 
   ChangeLogs: {{{./op4j-ChangeLog.txt}[op4j]}} {{{./op4j-ognl-ChangeLog.txt}[op4j-ognl]}} {{{./op4j-jodatime-ChangeLog.txt}[op4j-jodatime]}}
   
   Also see the <<{{{http://www.bendingthejavaspoon.com}[EXAMPLE RECIPES BLOG]}}>>
-
-  If you want to be the first to know about new versions, subscribe to the 
-  {{{https://lists.sourceforge.net/lists/listinfo/op4j-announce}Announcement Mailing List}}.
 
 op4j: Bending the Java spoon
 

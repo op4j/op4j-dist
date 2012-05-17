@@ -6,11 +6,11 @@
 Download OP4J
 
   
-  <<Current version>>: 1.1 (released December 3rd, 2010)
+  <<Current version>>: 1.2 (released May 14th, 2012)
   
-  <<{{{https://sourceforge.net/projects/op4j/files/}DOWNLOAD OP4J (from SourceForge.net)}}>>
+  <<{{{https://github.com/op4j/op4j.github.com/downloads}DOWNLOAD OP4J (from github.com)}}>>
   
   Nevertheless, if you are using Apache Maven for your projects, you can obtain op4j
   easily from the Maven central repositories by following these {{{./maveninfo.html}instructions}}.
   
-  You can also browse the Source Repository {{{./source-repository.html}here}}.
+  You can also browse the Source Repository {{{https://github.com/op4j}here}}.

@@ -86,17 +86,29 @@
     </resources>
   
     <plugins>        
+	
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>2.1</version>
-        <configuration>        
-       </configuration>
+        <version>3.1</version>
+		<configuration>
+          <reportPlugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-project-info-reports-plugin</artifactId>
+              <version>2.2</version>
+              <reports>
+                <report>license</report>
+              </reports>
+            </plugin>
+          </reportPlugins>
+        </configuration>
       </plugin>
       
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.2</version>
         <executions>
           <execution>
             <id>make-assembly-dist</id>
@@ -106,10 +118,10 @@
             </goals>
             <configuration>
               <descriptors>
-                <descriptor>${basedir}/src/assembly/dist.xml</descriptor>
+                <descriptor>src/assembly/dist.xml</descriptor>
               </descriptors>
               <appendAssemblyId>true</appendAssemblyId>
-              <finalName>op4j-${version}</finalName>
+              <finalName>op4j-${project.version}</finalName>
             </configuration>
           </execution>
         </executions>
@@ -126,21 +138,21 @@
     <dependency>
       <groupId>org.op4j</groupId>
       <artifactId>op4j</artifactId>
-      <version>${version}</version>
+      <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>
   
     <dependency>
       <groupId>org.op4j</groupId>
       <artifactId>op4j-ognl</artifactId>
-      <version>${version}</version>
+      <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>
   
     <dependency>
       <groupId>org.op4j</groupId>
       <artifactId>op4j-jodatime</artifactId>
-      <version>${version}</version>
+      <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>
     

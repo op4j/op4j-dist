@@ -33,27 +33,27 @@
       <directory>${basedir}/../op4j/target/</directory>
       <outputDirectory>/dist</outputDirectory>
       <includes>
-        <include>op4j-${version}.jar</include>
-        <include>op4j-${version}-javadoc.jar</include>
-        <include>op4j-${version}-sources.jar</include>
+        <include>op4j-${project.version}.jar</include>
+        <include>op4j-${project.version}-javadoc.jar</include>
+        <include>op4j-${project.version}-sources.jar</include>
       </includes>
     </fileSet>
     <fileSet>
       <directory>${basedir}/../op4j-ognl/target/</directory>
       <outputDirectory>/dist</outputDirectory>
       <includes>
-        <include>op4j-ognl-${version}.jar</include>
-        <include>op4j-ognl-${version}-javadoc.jar</include>
-        <include>op4j-ognl-${version}-sources.jar</include>
+        <include>op4j-ognl-${project.version}.jar</include>
+        <include>op4j-ognl-${project.version}-javadoc.jar</include>
+        <include>op4j-ognl-${project.version}-sources.jar</include>
       </includes>
     </fileSet>
     <fileSet>
       <directory>${basedir}/../op4j-jodatime/target/</directory>
       <outputDirectory>/dist</outputDirectory>
       <includes>
-        <include>op4j-jodatime-${version}.jar</include>
-        <include>op4j-jodatime-${version}-javadoc.jar</include>
-        <include>op4j-jodatime-${version}-sources.jar</include>
+        <include>op4j-jodatime-${project.version}.jar</include>
+        <include>op4j-jodatime-${project.version}-javadoc.jar</include>
+        <include>op4j-jodatime-${project.version}-sources.jar</include>
       </includes>
     </fileSet>
     <fileSet>
